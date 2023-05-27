@@ -83,7 +83,7 @@ global.APIKeys = {
 
    //--------------------- MAIN IMAGE  ------------------------
 
-   global.profileimage = 'https://github.com/Alien-alfa/Alien-alfa/blob/beta/Alfa.jpg?raw=true'
+   global.profileimage = './media/image/Cutie.jpg'
       
    //---------------------------------------------------------------------
 
@@ -91,7 +91,7 @@ global.APIKeys = {
 
    //--------------------- URL IMAGE  ------------------------
 
-   global.mainimgurl = 'https://github.com/Alien-alfa/Alien-alfa/blob/beta/Alfa.jpg?raw=true'
+   global.mainimgurl = './media/image/Cutie.jpg'
       
    //---------------------------------------------------------------------
 
