@@ -1,48 +1,10 @@
-//═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
-//                                                                                                                                                     //
-//                                                             ＷＨＡＴＳＡＰＰ ＢＯＴ－ＭＤ                                                               //
-//                                                                                                                                                     //
-//                                                                    Ｖ：１．０．１                                                                     //
-//                                                                                                                                                     //
-//                                     ░█████╗░██╗░░░░░██╗███████╗███╗░░██╗  ░█████╗░██╗░░░░░███████╗░█████╗░                                          //
-//                                     ██╔══██╗██║░░░░░██║██╔════╝████╗░██║  ██╔══██╗██║░░░░░██╔════╝██╔══██╗                                          //
-//                                     ███████║██║░░░░░██║█████╗░░██╔██╗██║  ███████║██║░░░░░█████╗░░███████║                                          //
-//                                     ██╔══██║██║░░░░░██║██╔══╝░░██║╚████║  ██╔══██║██║░░░░░██╔══╝░░██╔══██║                                          //
-//                                     ██║░░██║███████╗██║███████╗██║░╚███║  ██║░░██║███████╗██║░░░░░██║░░██║                                          //
-//                                     ╚═╝░░╚═╝╚══════╝╚═╝╚══════╝╚═╝░░╚══╝  ╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚═╝░░╚═╝                                          //
-//                                                                                                                                                     //
-//                                                                                                                                                     //
-//═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
+/* Copyright (C) 2023 Thesandu Thewsara.
 
-// Obfuscated By AlienAlfa
-// Unecrypted file Willbe relesed Soon
-// Full file will be relised After all BUGS Has been Fixed
+Licensed under the  GNU-3.0 License;
+you may not use this file except in compliance with the License.
 
-// CURRENTLY RUNNING ON BETA VERSION!!
-/**
-   * MIT License
-* 
-   * Copyright (c) 2021 Alien-Alfa.
-* 
-   * Permission is hereby granted, free of charge, to any person obtaining a copy
-   * of this software and associated documentation files (the "Software"), to deal
-   * in the Software without restriction, including without limitation the rights
-   * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-   * copies of the Software, and to permit persons to whom the Software is
-   * furnished to do so, subject to the following conditions:
-* 
-   * The above copyright notice and this permission notice shall be included in all
-   * copies or substantial portions of the Software.
-* 
-   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-   * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-   * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-   * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-   * SOFTWARE.
+QueenCutie - Thesandu Thewsara
 */
-
 
 
 
@@ -50,7 +12,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 
-var ownernum = ['0','447405935355']
+var ownernum = ['0','94778763517']
 //-------------
 
 
@@ -64,22 +26,16 @@ global.APIKeys = {
 	'https://zenzapis.xyz': '' }
     
 
-
-//|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|//	
-
-
-   //---------------------------------------------------------------------
-
-   global.worktype = 'private'
+   global.worktype = 'public'
 
    //---------------------------------------------------------------------
    
    
    //---------------------------------------------------------------------
 
-   global.sudo = ['447405935355']
+   global.sudo = ['94778763517']
    //-------------
-   global.owner = ['447405935355']
+   global.owner = ['94778763517']
 
    //---------------------------------------------------------------------
    
@@ -90,14 +46,12 @@ global.APIKeys = {
    //---------------------------------------------------------------------
 
 
-//|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|//	
-
 
    //--------------------- MENU URL BUTTON 1 ------------------------
 
    global.linkbuttid1 = 'ɪɴꜱᴛᴀɢʀᴀᴍ' 
    //-------------
-   global.butturl1 = 'https://www.instagram.com/alienalfa/'
+   global.butturl1 = 'https://www.instagram.com/__thes_and.u___/'
    
    //---------------------------------------------------------------------
 
@@ -107,7 +61,7 @@ global.APIKeys = {
 
    global.linkbuttid2 = 'ʏᴏᴜᴛᴜʙᴇ'
    //-------------
-   global.butturl2 = 'https://youtube.com/c/alienalfa'
+   global.butturl2 = 'https://github.com/ThesanduT/'
    
    //---------------------------------------------------------------------
 
@@ -119,7 +73,7 @@ global.APIKeys = {
 
    global.linktext = 'ꜱᴜʙꜱᴄʀɪʙᴇ ᴛᴏ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ'
    //-------------
-   global.linkurl = 'https://youtube.com/c/alienalfa'
+   global.linkurl = 'https://github.com/ThesanduT/'
    
    //---------------------------------------------------------------------
 
@@ -150,7 +104,7 @@ global.APIKeys = {
    
    global.mlinktxt1 = 'ʜᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ ʙᴏᴛ'
    //-------------
-   global.mlinkurl1 = 'https://youtube.com/c/alienalfa'
+   global.mlinkurl1 = 'https://github.com/ThesanduT/QueenCutie-MD'
    //------------- 
    
  //------ URL BUTTON 2 -----
@@ -187,7 +141,7 @@ global.APIKeys = {
 //-------------
 global.premium = [`${ownernum}`]
 //-------------
-global.sessionName = 'session.alfa'
+global.sessionName = 'session'
 //-------------
 global.prefa = ['','!','.','🐦','🐤','🗿']
 //-------------
@@ -195,7 +149,7 @@ global.sp = '𒆜'
 //-------------
 global.devname = 'ＡＬＩＥＮ ＡＬＦＡ'
 //-------------
-global.devNum = ['447405935355']
+global.devNum = ['94778763517']
 //-------------
 global.greetings = 'Hey  👋🏻'
 //-------------
@@ -207,13 +161,13 @@ global.botname = 'ＡＬＩＥＮ ＡＬＦＡ'
 //-------------
 global.icon = '✩' 
 //-------------
-global.mail = 'AlienAlfa.YT@gmail.com'
+global.mail = 'tthewsara@gmail.com'
 //-------------
-global.youtube = 'https://youtube.com/c/alienalfa'
+global.youtube = 'https://youtube.com/c/xxxx'
 //-------------
-global.github = 'https://github.com/Alien-alfa/' 
+global.github = 'https://github.com/ThesanduT/' 
 //-------------
-global.insta = 'https://www.instagram.com/alienalfa/' 
+global.insta = 'https://www.instagram.com/__thes_and.u___/' 
 //-------------
 global.linkname = '𝘼𝙇𝙄𝙀𝙉 𝘼𝙇𝙁𝘼'
 //-------------
@@ -232,9 +186,9 @@ global.herokuapp = ''
 //-------------
 global.welcomeactive =  true
 //-------------
-global.alivemess = false
+global.alivemess = true
 //-------------
-global.aliveimage = false
+global.aliveimage = true
 //-------------
 global.speedmode =  'active'
 //-------------
@@ -249,7 +203,7 @@ global.anticall = false
 
 
 
-global.thumb = fs.readFileSync('./lib/lowdb/adapters/alfa.jpg')
+global.thumb = fs.readFileSync('./media/image/Cutie.jpg')
 
 global.mess = {
     success: 'ᴅᴏɴᴇ',
