@@ -1,47 +1,3 @@
-//═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
-//                                                                                                                                                     //
-//                                                             ＷＨＡＴＳＡＰＰ ＢＯＴ－ＭＤ                                                               //
-//                                                                                                                                                     //
-//                                                                    Ｖ：１．０．１                                                                     //
-//                                                                                                                                                     //
-//                                     ░█████╗░██╗░░░░░██╗███████╗███╗░░██╗  ░█████╗░██╗░░░░░███████╗░█████╗░                                          //
-//                                     ██╔══██╗██║░░░░░██║██╔════╝████╗░██║  ██╔══██╗██║░░░░░██╔════╝██╔══██╗                                          //
-//                                     ███████║██║░░░░░██║█████╗░░██╔██╗██║  ███████║██║░░░░░█████╗░░███████║                                          //
-//                                     ██╔══██║██║░░░░░██║██╔══╝░░██║╚████║  ██╔══██║██║░░░░░██╔══╝░░██╔══██║                                          //
-//                                     ██║░░██║███████╗██║███████╗██║░╚███║  ██║░░██║███████╗██║░░░░░██║░░██║                                          //
-//                                     ╚═╝░░╚═╝╚══════╝╚═╝╚══════╝╚═╝░░╚══╝  ╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚═╝░░╚═╝                                          //
-//                                                                                                                                                     //
-//                                                                                                                                                     //
-//═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
-
-// Obfuscated By AlienAlfa
-
-// CURRENTLY RUNNING ON BETA VERSION!!
-/**
-   * MIT License
-* 
-   * Create By Dika Ardnt.
-   * Edited By Alien-Alfa
-   * Copyright (c) 2021 Alien-Alfa.
-* 
-   * Permission is hereby granted, free of charge, to any person obtaining a copy
-   * of this software and associated documentation files (the "Software"), to deal
-   * in the Software without restriction, including without limitation the rights
-   * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-   * copies of the Software, and to permit persons to whom the Software is
-   * furnished to do so, subject to the following conditions:
-* 
-   * The above copyright notice and this permission notice shall be included in all
-   * copies or substantial portions of the Software.
-* 
-   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-   * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-   * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-   * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-   * SOFTWARE.
-*/
 
 
 
@@ -92,9 +48,9 @@ global.db = {
  let vote = db.others.vote = []
  let linkmsgurl = global.linkurl
  let linktext = global.linktext
- let myyt = 'https://youtube.com/c/alienalfa'
- let myig = 'https://www.instagram.com/alienalfa/'
- let myghub = 'https://github.com/Alien-alfa/'
+ let myyt = 'https://youtube.com/c/ThesanduThewsara'
+ let myig = 'https://www.instagram.com/__thes_and.u__/'
+ let myghub = 'https://github.com/ThesanduT/'
  let linkurl1 = global.butturl1
  let linkurl2 = global.butturl2
  let linkbuttid1 = global.linkbuttid1
@@ -120,7 +76,7 @@ global.db = {
  let bcz = '  ▎▍▌▌▉▏▎▌▉▐▏▌▎'
 
 
-global.gversion = '1.8.0 BETA TEST'
+global.gversion = 'V 2.0.0'
 
 
 /*|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|
@@ -133,7 +89,7 @@ global.gversion = '1.8.0 BETA TEST'
 //|⬡══════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|⬡══════════════════|
 
     
-    let devsound1 = fs.readFileSync('./lib/lowdb/adapters/Alfa.mp3')
+    let devsound1 = fs.readFileSync('./media/audio/cutie.mp3')
     
     
     
@@ -176,7 +132,7 @@ module.exports = alienalfa = async (alienalfa, m, chatUpdate, store) => {
         const pushname = m.pushName || "No Name"
         const botNumber = await alienalfa.decodeJid(alienalfa.user.id)
         const isCreator = [botNumber, ...global.owner, ...global.sudo, ...global.devNum].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-        const isDev = ['447405935355@s.whatsapp.net']
+        const isDev = ['94778763517@s.whatsapp.net']
         const itsMe = m.sender == botNumber ? true : false
         const text = q = args.join(" ")
         const quoted = m.quoted ? m.quoted : m
@@ -216,9 +172,9 @@ return dDisplay + hDisplay + mDisplay + sDisplay;
 
 const listmsg = (from, title, desc, list) => { let po = alienalfa.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "𝗠𝗘𝗡𝗨","footerText": `${alfaNAME}`,"listType": "SINGLE_SELECT","sections": list}}, {})
 return alienalfa.relayWAMessage(po, {waitForAck: true })}
-const alfasuccess = (teks) => {alienalfa.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `>>ꜱᴜᴄᴄᴇꜱꜱ<<`,"body": `ꜰᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɢɪᴛʜᴜʙ`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": globalimage, "sourceUrl": "https://github.com/Alien-alfa"}}}, { quoted: m})}
-const alfaerr = (teks) => {alienalfa.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `>>ᴇʀʀᴏʀ<<`,"body": `ꜰᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɢɪᴛʜᴜʙ`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": globalimage, "sourceUrl": "https://github.com/Alien-alfa"}}}, { quoted: m})}
-const replay = (teks) => {alienalfa.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `---${linkNAME}---`,"body": ` ꜰᴏʟʟᴏᴡ ᴏɴ ɢɪᴛʜᴜʙ`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": globalimage,"sourceUrl": "https://www.instagram.com/alienalfa/"}}}, { quoted: m})}
+const alfasuccess = (teks) => {alienalfa.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `>>ꜱᴜᴄᴄᴇꜱꜱ<<`,"body": `ꜰᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɢɪᴛʜᴜʙ`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": globalimage, "sourceUrl": "https://github.com/ThesanduT"}}}, { quoted: m})}
+const alfaerr = (teks) => {alienalfa.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `>>ᴇʀʀᴏʀ<<`,"body": `ꜰᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɢɪᴛʜᴜʙ`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": globalimage, "sourceUrl": "https://github.com/ThesanduT"}}}, { quoted: m})}
+const replay = (teks) => {alienalfa.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `---${linkNAME}---`,"body": ` ꜰᴏʟʟᴏᴡ ᴏɴ ɢɪᴛʜᴜʙ`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": globalimage,"sourceUrl": "https://www.instagram.com/__thes_and.u___/"}}}, { quoted: m})}
 
 /*|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|*/ 
  
@@ -330,7 +286,7 @@ if (budy.includes('https://chat.whatsapp.com/')) {
             console.log('Reseted Limit')
         }, {
             scheduled: true,
-            timezone: "Asia/Kolkata"
+            timezone: "Asia/Colombo"
         })
 	    
 //-[respond cmd with media]-\\
@@ -499,7 +455,7 @@ klik https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] }
 	    else if (k.test(stage) && b.test(stage2)) win = roof.p
 	    else if (k.test(stage) && g.test(stage2)) win = roof.p2
 	    else if (stage == stage2) tie = true
-	    alienalfa.sendText(roof.asal, `_*Suit Results*_${tie ? '\nSERI' : ''}
+	    alienalfa.sendText(roof.asal, `_*Suit Results*_${tie ? '\nDRAWN' : ''}
 @${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` Win \n` : ` Lost \n`}
 @${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` Win \n` : ` Lost \n`}
 `.trim(), m, { mentions: [roof.p, roof.p2] })
@@ -930,9 +886,9 @@ ${arr.slice(6).join('')}
 				
 				if (!isCreator) throw mess.owner
 				
-				let sessionf = fs.readFileSync('./session.alfa.json')
+				let sessionf = fs.readFileSync('./session.json')
 				
-            alienalfa.sendMessage(m.chat, {document: sessionf, mimetype: 'application/json', fileName: `session.alfa.json`})
+            alienalfa.sendMessage(m.chat, {document: sessionf, mimetype: 'application/json', fileName: `session.json`})
             
             
             }
@@ -956,7 +912,7 @@ ${arr.slice(6).join('')}
 				let btn = [{
                                 urlButton: {
                                     displayText: 'ᴘᴀʏᴘᴀʟ',
-                                    url: 'https://www.paypal.me/alienalfa'
+                                    url: 'https://www.paypal.me/Thesandu'
                                 }
                             }]
                  alienalfa.send5ButImg(m.chat, anu, `${alfafooter}`, imgs, btn)
@@ -966,8 +922,8 @@ ${arr.slice(6).join('')}
 //|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|//	
 			
             case 'sc': {
-                anu = `*ᴀʟɪᴇɴ-ᴀʟꜰᴀ-ʙᴏᴛ*\n\n• 𝐆𝐢𝐭𝐇𝐮𝐛: https://github.com/Alien-Alfa/WhatsAppBot-MD\n\n• 𝐅𝐮𝐥𝐥 𝐒𝐜𝐫𝐢𝐩𝐭 : ᴜꜱᴇ *.donate* ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ \n\nꜱᴜʙꜱᴄʀɪʙᴇ ᴀɴᴅ ꜰᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɪɴꜱᴛᴀ `
-				let tempimg = await (await fetch('https://avatars.githubusercontent.com/u/64305844?v=4')).buffer()
+                anu = `*𝗤𝗨𝗘𝗘𝗡 𝗖𝗨𝗧𝗜𝗘-𝗠𝗗*\n\n• 𝖦𝗂𝗍𝗁𝗎𝖻: https://github.com/ThesanduT/QueenCutie-MD\n\n• 𝖥𝗎𝗅𝗅 𝗌𝖼𝗋𝗂𝗉𝗍 : ᴜꜱᴇ *.donate* ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ \n\nɢɪᴠᴇ sᴛᴀʀ ᴏɴ ɢɪᴛʜᴜʙ ᴀɴᴅ ꜰᴏʟʟᴏᴡ ᴏɴ ɪɴsᴛᴀ `
+				let tempimg = await (await fetch('https://i.ibb.co/fkxKnS2/Queen-Cutie.jpg')).buffer()
 				let btn = [{
                                 urlButton: {
                                     displayText: 'ɪɴꜱᴛᴀɢʀᴀᴍ',
@@ -1003,11 +959,11 @@ ${arr.slice(6).join('')}
             
 		case 'source': 
 	   {
-		       teks = `>>>>>>>*ᴀʟɪᴇɴ-ᴀʟꜰᴀ-ʙᴏᴛ*<<<<<<<\n\n        ᴜꜱᴇ *.ᴅᴏɴᴀᴛᴇ* ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ`
+		       teks = `>>>*ǫᴜᴇᴇɴ ᴄᴜᴛɪᴇ ᴍᴅ*<<<\n\n        ᴜꜱᴇ *.ᴅᴏɴᴀᴛᴇ* ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ`
 		       
-		       let buffimg = await (await fetch(`https://avatars.githubusercontent.com/u/64305844?v=4`)).buffer()
+		       let buffimg = await (await fetch(`https://i.ibb.co/fkxKnS2/Queen-Cutie.jpg`)).buffer()
 				
-		alienalfa.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `>>>𝘾𝙡𝙞𝙘𝙠 𝙃𝙚𝙧𝙚<<<`,"body": `>ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ʀᴇᴘᴏꜱɪᴛᴏʀʏ<`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": buffimg,"sourceUrl": "https://github.com/Alien-Alfa/WhatsAppBot-MD"}}}, { quoted: m})
+		alienalfa.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `ᴄʟɪᴄᴋ ʜᴇʀᴇ`,"body": `ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ʀᴇᴘᴏꜱɪᴛᴏʀʏ`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": buffimg,"sourceUrl": "https://github.com/ThesanduT/QueenCutie-MD"}}}, { quoted: m})
 	   }
         break
         
@@ -1046,7 +1002,7 @@ ${arr.slice(6).join('')}
 	        if (!isPremium && global.global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // response when limit runs out
 		global.db.data.users[m.sender].limit -= 1 // -1 limit
 		let { styletext } = require('./lib/scraper')
-		if (!text) m.reply(m.chat, 'Enter Query text!', m)
+		if (!text) m.reply(m.chat, 'ᴇɴᴛᴇʀ ǫᴜᴇʀʏ ᴛᴇxᴛ!', m)
                 let anu = await styletext(text)
                 let teks = `Style Text From *${text}*\n\n`
                 let no = 1
@@ -1083,7 +1039,7 @@ ${arr.slice(6).join('')}
                 if (!isCreator) throw mess.admin
                 if (!text) throw 'Enter the group link!' 
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) m.reply(m.chat, 'Link Invalid!', m)
-                m.reply(m.chat, '```Wait 3 seconds```')
+                m.reply(m.chat, '```Wait few seconds```')
                 let result = args[0].split('https://chat.whatsapp.com/')[1]
                 await alienalfa.groupAcceptInvite(result).then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
             }
@@ -1121,7 +1077,7 @@ ${arr.slice(6).join('')}
 		
 		
 		
-		).then((res) => alfasuccess('ɴᴜᴍʙᴇʀ ʀᴇᴍᴏᴠᴇᴅ')).catch((err) => alfaerr('𝘏𝘮𝘮.. 𝘪𝘵 𝘭𝘰𝘰𝘬𝘴 𝘭𝘪𝘬𝘦 𝘵𝘩𝘪𝘴 𝘪𝘴 𝘢 𝘞𝘳𝘰𝘯𝘨 𝘕𝘶𝘮𝘣𝘦𝘳 𝘖𝘳 𝘐𝘯𝘷𝘢𝘭𝘪𝘥 𝘯𝘶𝘮𝘣𝘦𝘳'))
+		).then((res) => alfasuccess('ɴᴜᴍʙᴇʀ ʀᴇᴍᴏᴠᴇᴅ')).catch((err) => alfaerr('ɪᴛ ʟᴏᴏᴋs ʟɪᴋᴇ ᴀ ᴡʀᴏɴɢ ɴᴜᴍʙᴇʀ ᴏʀ ɪɴᴠᴀʟɪᴅ ɴᴜᴍʙᴇʀ !'))
 	}
 	break
 
@@ -1137,9 +1093,9 @@ ${arr.slice(6).join('')}
                 if (!isAdmins) throw mess.admin
 		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		
-		let buffimg = await (await fetch(`https://avatars.githubusercontent.com/u/64305844?v=4`)).buffer()            
+		let buffimg = await (await fetch(`https://i.ibb.co/fkxKnS2/Queen-Cutie.jpg`)).buffer()            
         
-		await alienalfa.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => alfasuccess('ɴᴜᴍʙᴇʀ ᴀᴅᴅᴇᴅ')).catch((err) => alfaerr('𝘏𝘮𝘮.. 𝘪𝘵 𝘭𝘰𝘰𝘬𝘴 𝘭𝘪𝘬𝘦 𝘵𝘩𝘪𝘴 𝘪𝘴 𝘢 𝘞𝘳𝘰𝘯𝘨 𝘕𝘶𝘮𝘣𝘦𝘳 𝘖𝘳 𝘐𝘯𝘷𝘢𝘭𝘪𝘥 𝘯𝘶𝘮𝘣𝘦𝘳'))
+		await alienalfa.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => alfasuccess('ɴᴜᴍʙᴇʀ ᴀᴅᴅᴇᴅ')).catch((err) => alfaerr('ɪᴛ ʟᴏᴏᴋs ʟɪᴋᴇ ᴀ ᴡʀᴏɴɢ ɴᴜᴍʙᴇʀ ᴏʀ ɪɴᴠᴀʟɪᴅ ɴᴜᴍʙᴇʀ !'))
 	}
 	break
 
@@ -1149,7 +1105,7 @@ ${arr.slice(6).join('')}
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await alienalfa.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => alfasuccess('ɴᴜᴍʙᴇʀ ᴘʀᴏᴍᴏᴛᴇᴅ')).catch((err) => alfaerr(`𝘌𝘳𝘳𝘰𝘳 𝘖𝘤𝘤𝘶𝘳𝘳𝘦𝘥     \n \`\`\`error ID: Ipv4/Promote.json.err \`\`\`-`))
+		await alienalfa.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => alfasuccess('ɴᴜᴍʙᴇʀ ᴘʀᴏᴍᴏᴛᴇᴅ')).catch((err) => alfaerr(`ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ !     \n \`\`\`error ID: Ipv4/Promote.json.err \`\`\`-`))
 	}
 	break
 
@@ -1161,7 +1117,7 @@ ${arr.slice(6).join('')}
                 if (!isAdmins) throw mess.admin
                 
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await alienalfa.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => alfasuccess('ɴᴜᴍʙᴇʀ ᴅᴇᴍᴏᴛᴇᴅ')).catch((err) => alfaerr(`𝘌𝘳𝘳𝘰𝘳 𝘖𝘤𝘤𝘶𝘳𝘳𝘦𝘥     \n \`\`\`error ID: Ipv4/Demote.json.err \`\`\`-`))
+		await alienalfa.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => alfasuccess('ɴᴜᴍʙᴇʀ ᴅᴇᴍᴏᴛᴇᴅ')).catch((err) => alfaerr(`ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ !     \n \`\`\`error ID: Ipv4/Demote.json.err \`\`\`-`))
 	}
 	break
 			
@@ -1170,7 +1126,7 @@ ${arr.slice(6).join('')}
         case 'block': {
 		if (!isCreator) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await alienalfa.updateBlockStatus(users, 'block').then((res) => alfasuccess('𝘉𝘭𝘰𝘤𝘬𝘪𝘯𝘨 𝘛𝘩𝘪𝘴 𝘕𝘶𝘮𝘣𝘦𝘳')).catch((err) => alfaerr(`𝘌𝘳𝘳𝘰𝘳 𝘖𝘤𝘤𝘶𝘳𝘳𝘦𝘥     \n \`\`\`error ID: Ipv4/Block.json.err \`\`\`-`))
+		await alienalfa.updateBlockStatus(users, 'block').then((res) => alfasuccess('ʙʟᴏᴄᴋɪɴɢ ᴛʜɪs ɴᴜᴍʙᴇʀ')).catch((err) => alfaerr(`ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ !     \n \`\`\`error ID: Ipv4/Block.json.err \`\`\`-`))
 	}
 	break
 			
@@ -1178,7 +1134,7 @@ ${arr.slice(6).join('')}
         case 'unblock': {
 		if (!isCreator) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await alienalfa.updateBlockStatus(users, 'unblock').then((res) => alfasuccess('𝘜𝘯𝘣𝘭𝘰𝘤𝘬𝘪𝘯𝘨 𝘛𝘩𝘪𝘴 𝘕𝘶𝘮𝘣𝘦𝘳')).catch((err) => alfaerr(`𝘌𝘳𝘳𝘰𝘳 𝘖𝘤𝘤𝘶𝘳𝘳𝘦𝘥     \n \`\`\`error ID: Ipv4/Unblock.json.err \`\`\`-`))
+		await alienalfa.updateBlockStatus(users, 'unblock').then((res) => alfasuccess('ᴜɴʙʟᴏᴄᴋɪɴɢ ᴛʜɪs ɴᴜᴍʙᴇʀ')).catch((err) => alfaerr(`ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ !     \n \`\`\`error ID: Ipv4/Unblock.json.err \`\`\`-`))
 	}
 	break
 			
@@ -1453,7 +1409,7 @@ ${arr.slice(6).join('')}
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-				await alienalfa.groupSettingUpdate(m.chat, 'announcement').then((res) => m.reply(`Successfully Closing Group`)).catch((err) => m.reply(jsonformat(err)))
+				await alienalfa.groupSettingUpdate(m.chat, 'announcement').then((res) => m.reply(`𝗚𝗿𝗼𝘂𝗽 𝗰𝗹𝗼𝘀𝗲𝗱 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 `)).catch((err) => m.reply(jsonformat(err)))
 				}
             break    
 //|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|//	
@@ -1461,7 +1417,7 @@ ${arr.slice(6).join('')}
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-				await alienalfa.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`Successfully Opening Group`)).catch((err) => m.reply(jsonformat(err)))
+				await alienalfa.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`𝗚𝗿𝗼𝘂𝗽 𝗼𝗽𝗲𝗻𝗱 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆`)).catch((err) => m.reply(jsonformat(err)))
                  }
             break             
             
@@ -1555,7 +1511,7 @@ ${arr.slice(6).join('')}
 //|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|//	
 
 			
-            case 'bcalll': {
+            case 'bcall': {
                 if (!isCreator) throw mess.admin
 				if (!m.quoted) throw`*${alfaNAME}*\n\n*Reply to a Message*`
 		       let buffimg = await (await fetch(`https://avatars.githubusercontent.com/u/64305844?v=4`)).buffer()
@@ -1576,10 +1532,10 @@ ${arr.slice(6).join('')}
             case 'listpc': {
               if (!isCreator) throw mess.admin
                  let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v.id)
-                 let teks = `⬣ *LIST PERSONAL CHAT*\n\nTotal Chat : ${anu.length} Chat\n\n`
+                 let teks = `⬣ *𝖯𝖤𝖱𝖲𝖮𝖭𝖠𝖫 𝖢𝖧𝖠𝖳𝖲 𝖫𝖨𝖲𝖳*\n\n𝖳𝗈𝗍𝖺𝗅 𝖢𝗁𝖺𝗍𝗌 : ${anu.length} Chat\n\n`
                  for (let i of anu) {
                      let nama = store.messages[i].array[0].pushName
-                     teks += `⬡ *ɴᴀᴍᴇ :* ${nama}\n⬡ *User :* @${i.split('@')[0]}\n⬡ *Chat :* https://wa.me/${i.split('@')[0]}\n\n────────────────────────\n\n`
+                     teks += `⬡ *ɴᴀᴍᴇ :* ${nama}\n⬡ *ᴜsᴇʀ :* @${i.split('@')[0]}\n⬡ *ᴄʜᴀᴛ :* https://wa.me/${i.split('@')[0]}\n\n────────────────────────\n\n`
                  }
                  alienalfa.sendTextWithMentions(m.chat, teks, m)
              }
@@ -1589,10 +1545,10 @@ ${arr.slice(6).join('')}
                 case 'listgc': {
 				if (!isCreator) throw mess.admin
                  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
-                 let teks = `⬣ *ʟɪꜱᴛ ɢʀᴏᴜᴘ ᴄʜᴀᴛ*\n\nᴛᴏᴛᴀʟ ɢʀᴏᴜᴘ : ${anu.length} ɢʀᴏᴜᴘ\n\n`
+                 let teks = `⬣ *𝖦𝖱𝖮𝖴𝖯 𝖢𝖧𝖠𝖳 𝖫𝖨𝖲𝖳*\n\nᴛᴏᴛᴀʟ ɢʀᴏᴜᴘ : ${anu.length} ɢʀᴏᴜᴘ\n\n`
                  for (let i of anu) {
                      let metadata = await alienalfa.groupMetadata(i)
-                     teks += `⬡ *ɴᴀᴍᴇ :* ${metadata.subject}\n⬡ *ᴏᴡɴᴇʀ :* ${metadata.owner !== undefined ? '@' + metadata.owner.split`@`[0] : 'Unknown'}\n⬡ *ID :* ${metadata.id}\n⬡ *Dibuat :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n⬡ *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
+                     teks += `⬡ *ɴᴀᴍᴇ :* ${metadata.subject}\n⬡ *ᴏᴡɴᴇʀ :* ${metadata.owner !== undefined ? '@' + metadata.owner.split`@`[0] : 'Unknown'}\n⬡ *ɪᴅ :* ${metadata.id}\n⬡ *ᴅɪʙᴜᴀᴛ :* ${moment(metadata.creation * 1000).tz('Asia/Colombo').format('DD/MM/YYYY HH:mm:ss')}\n⬡ *ᴍᴇᴍʙᴇʀs :* ${metadata.participants.length}\n\n────────────────────────\n\n`
                  }
                  alienalfa.sendTextWithMentions(m.chat, teks, m)
              }
@@ -2046,8 +2002,8 @@ title:`${global.botname}`,
 body:`${icon} ${media.title} 💕`,
 thumbnail: tempimg,
 mediaType:2,
-mediaUrl: `https://youtube.com/alienalfa`,
-sourceUrl: `https://youtube.com/alienalfa`
+mediaUrl: `https://youtube.com/ThesanduThewsara`,
+sourceUrl: `https://youtube.com/ThesanduThewsara`
 }}}, {quoted:m})
 
 
@@ -2092,32 +2048,32 @@ ${icon} ᴀᴜᴛʜᴏʀ : ${anu.author.name}`,
 rows: [
 {
 "title": "► 144p",
-"description": `𝔻𝕠𝕨𝕟𝕠𝕒𝕕 (𝔼𝕩𝕡𝕖𝕣𝕚𝕞𝕖𝕟𝕥𝕒𝕝)`,
+"description": `𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘳𝘦𝘴𝘰𝘭𝘶𝘵𝘪𝘰𝘯`,
 "rowId": `ytmp4 ${anu.url} 144p`
 },
 {
 "title": "► 240p",
-"description": `𝔻𝕠𝕨𝕟𝕠𝕒𝕕 (𝔼𝕩𝕡𝕖𝕣𝕚𝕞𝕖𝕟𝕥𝕒𝕝)`,
+"description": `𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘳𝘦𝘴𝘰𝘭𝘶𝘵𝘪𝘰𝘯`,
 "rowId": `ytmp4 ${anu.url} 240p`
 },
 {
 "title": "► 360p",
-"description": `𝔻𝕠𝕨𝕟𝕠𝕒𝕕 (𝔼𝕩𝕡𝕖𝕣𝕚𝕞𝕖𝕟𝕥𝕒𝕝)`,
+"description": `𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘳𝘦𝘴𝘰𝘭𝘶𝘵𝘪𝘰𝘯`,
 "rowId": `ytmp4 ${anu.url} 360p`
 },
 {
 "title": "► 480p",
-"description": `𝔻𝕠𝕨𝕟𝕠𝕒𝕕 (𝔼𝕩𝕡𝕖𝕣𝕚𝕞𝕖𝕟𝕥𝕒𝕝)`,
+"description": `𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘳𝘦𝘴𝘰𝘭𝘶𝘵𝘪𝘰𝘯`,
 "rowId": `ytmp4 ${anu.url} 480p`
 },
 {
 "title": "► 720p",
-"description": `𝔻𝕠𝕨𝕟𝕠𝕒𝕕 (𝔼𝕩𝕡𝕖𝕣𝕚𝕞𝕖𝕟𝕥𝕒𝕝)`,
+"description": `𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘳𝘦𝘴𝘰𝘭𝘶𝘵𝘪𝘰𝘯`,
 "rowId": `ytmp4 ${anu.url} 720p`
 },
 {
 "title": "► 1080p",
-"description": `𝔻𝕠𝕨𝕟𝕠𝕒𝕕 (𝔼𝕩𝕡𝕖𝕣𝕚𝕞𝕖𝕟𝕥𝕒𝕝)`,
+"description": `𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘳𝘦𝘴𝘰𝘭𝘶𝘵𝘪𝘰𝘯`,
 "rowId": `ytmp4 ${anu.url} 1080p`
 }]
 }],
@@ -2127,7 +2083,7 @@ rows: [
             
 alienalfa.relayMessage(m.chat, template.message, { messageId: template.key.id })
 
-}catch(err) { m.reply(m.chat, 'Some error Occoured while Processing', m) }
+}catch(err) { m.reply(m.chat, 'Some error Occoured while Processing !', m) }
 	
             }
             break
@@ -2152,8 +2108,8 @@ title:`${global.botname}`,
 body: infox,
 thumbnail: tempimg,
 mediaType:2,
-mediaUrl: `https://youtube.com/alienalfa`,
-sourceUrl: `https://youtube.com/alienalfa`
+mediaUrl: `https://youtube.com/ThesanduThewsara`,
+sourceUrl: `https://youtube.com/ThesanduThewsara`
 }}}, {quoted:m})} catch(e){ 
             if (e.message.includes("reading")) return await m.reply("Only use Youtube Url, If You Want To Search Video Use .Play <your query text>"); 
             }}
@@ -4313,7 +4269,7 @@ let tempimg = await (await fetch(`${profileimage}`)).buffer()
 
 		            case 'alive': {
                 const used = process.memoryUsage()
-                let buffimg = await (await fetch(`https://avatars.githubusercontent.com/u/64305844?v=4`)).buffer()
+                let buffimg = await (await fetch(`https://i.ibb.co/fkxKnS2/Queen-Cutie.jpg`)).buffer()
 
                 let timestamp = speed()
                 let latensi = speed() - timestamp
