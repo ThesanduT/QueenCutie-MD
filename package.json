@@ -10,7 +10,7 @@
   },
   "nodemonConfig": {
     "ignore": [
-      "/root/AlienAlfa/*"
+      "/root/ThesanduT/*"
     ],
     "delay": 2500
   },
