@@ -97,7 +97,7 @@ global.APIKeys = {
 
    global.linkbuttid1 = 'ɪɴꜱᴛᴀɢʀᴀᴍ' 
    //-------------
-   global.butturl1 = 'https://www.instagram.com/alienalfa/'
+   global.butturl1 = 'https://www.instagram.com/__thes_and.u___/'
    
    //---------------------------------------------------------------------
 
@@ -187,7 +187,7 @@ global.APIKeys = {
 //-------------
 global.premium = [`${ownernum}`]
 //-------------
-global.sessionName = 'session.alfa'
+global.sessionName = 'session'
 //-------------
 global.prefa = ['','!','.','🐦','🐤','🗿']
 //-------------
@@ -207,13 +207,13 @@ global.botname = '𝗤𝗨𝗘𝗘𝗡 𝗖𝗨𝗧𝗜𝗘-𝗠𝗗'
 //-------------
 global.icon = '✩' 
 //-------------
-global.mail = 'AlienAlfa.YT@gmail.com'
+global.mail = 'tthewsara@gmail.com'
 //-------------
-global.youtube = 'https://youtube.com/c/alienalfa'
+global.youtube = 'https://youtube.com/c/ThesanduThewsara'
 //-------------
-global.github = 'https://github.com/Alien-alfa/' 
+global.github = 'https://github.com/ThesanduT/' 
 //-------------
-global.insta = 'https://www.instagram.com/alienalfa/' 
+global.insta = 'https://www.instagram.com/__thes_and.u___/' 
 //-------------
 global.linkname = 'ǫᴜᴇᴇɴ ᴄᴜᴛɪᴇ ᴍᴅ'
 //-------------
@@ -230,13 +230,13 @@ global.herokuapp = ''
 //============ Modz ============//
 
 //-------------
-global.welcomeactive =  true
+global.welcomeactive = true
 //-------------
 global.alivemess = 'Hey i am alive now'
 //-------------
 global.aliveimage = true
 //-------------
-global.speedmode =  'active'
+global.speedmode = 'active'
 //-------------
 global.ownermess = 'ʜᴇʏ ᴛʜɪꜱ ɪꜱ ᴍʏ ᴏᴡɴᴇʀ, ᴘʟᴇᴀꜱᴇ ᴛᴀʟᴋ ɪɴ ᴇɴɢʟɪꜱʜ'
 //-------------
