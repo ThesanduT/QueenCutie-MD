@@ -50,7 +50,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 
-var ownernum = ['0','447405935355']
+var ownernum = ['0','94778763517']
 //-------------
 
 
@@ -70,22 +70,22 @@ global.APIKeys = {
 
    //---------------------------------------------------------------------
 
-   global.worktype = 'private'
+   global.worktype = 'public'
 
    //---------------------------------------------------------------------
    
    
    //---------------------------------------------------------------------
 
-   global.sudo = ['447405935355']
+   global.sudo = ['94778763517']
    //-------------
-   global.owner = ['447405935355']
+   global.owner = ['94778763517']
 
    //---------------------------------------------------------------------
    
-   global.packname = 'ＡＬＩＥＮ' 
+   global.packname = '𝗤𝗨𝗘𝗘𝗡 𝗖𝗨𝗧𝗜𝗘-𝗠𝗗' 
    //-------------
-   global.author = 'ＡＬＦＡ'
+   global.author = 'ᴛʜᴇsᴀɴᴅᴜ ᴛʜᴇᴡsᴀʀᴀ'
 
    //---------------------------------------------------------------------
 
@@ -107,7 +107,7 @@ global.APIKeys = {
 
    global.linkbuttid2 = 'ʏᴏᴜᴛᴜʙᴇ'
    //-------------
-   global.butturl2 = 'https://youtube.com/c/alienalfa'
+   global.butturl2 = 'https://youtube.com/c/ThesanduThewsara'
    
    //---------------------------------------------------------------------
 
@@ -119,7 +119,7 @@ global.APIKeys = {
 
    global.linktext = 'ꜱᴜʙꜱᴄʀɪʙᴇ ᴛᴏ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ'
    //-------------
-   global.linkurl = 'https://youtube.com/c/alienalfa'
+   global.linkurl = 'https://youtube.com/c/ThesanduThewsara'
    
    //---------------------------------------------------------------------
 
@@ -129,7 +129,7 @@ global.APIKeys = {
 
    //--------------------- MAIN IMAGE  ------------------------
 
-   global.profileimage = 'https://github.com/Alien-alfa/Alien-alfa/blob/beta/Alfa.jpg?raw=true'
+   global.profileimage = 'https://i.ibb.co/fkxKnS2/Queen-Cutie.jpg'
       
    //---------------------------------------------------------------------
 
@@ -137,7 +137,7 @@ global.APIKeys = {
 
    //--------------------- URL IMAGE  ------------------------
 
-   global.mainimgurl = 'https://github.com/Alien-alfa/Alien-alfa/blob/beta/Alfa.jpg?raw=true'
+   global.mainimgurl = 'https://i.ibb.co/fkxKnS2/Queen-Cutie.jpg'
       
    //---------------------------------------------------------------------
 
@@ -150,7 +150,7 @@ global.APIKeys = {
    
    global.mlinktxt1 = 'ʜᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ ʙᴏᴛ'
    //-------------
-   global.mlinkurl1 = 'https://youtube.com/c/alienalfa'
+   global.mlinkurl1 = 'https://youtube.com/c/ThesanduThewsara'
    //------------- 
    
  //------ URL BUTTON 2 -----
@@ -193,17 +193,17 @@ global.prefa = ['','!','.','🐦','🐤','🗿']
 //-------------
 global.sp = '𒆜'
 //-------------
-global.devname = 'ＡＬＩＥＮ ＡＬＦＡ'
+global.devname = '𝚀𝚄𝙴𝙴𝙽 𝙲𝚄𝚃𝙸𝙴 - 𝙼𝙳'
 //-------------
-global.devNum = ['447405935355']
+global.devNum = ['94778763517']
 //-------------
 global.greetings = 'Hey  👋🏻'
 //-------------
 global.listicon = '✩' 
 //-------------
-global.wm = 'ＡＬＩＥＮ ＡＬＦＡ' 
+global.wm = '𝗤𝗨𝗘𝗘𝗡 𝗖𝗨𝗧𝗜𝗘-𝗠𝗗' 
 //-------------
-global.botname = 'ＡＬＩＥＮ ＡＬＦＡ'
+global.botname = '𝗤𝗨𝗘𝗘𝗡 𝗖𝗨𝗧𝗜𝗘-𝗠𝗗'
 //-------------
 global.icon = '✩' 
 //-------------
@@ -215,9 +215,9 @@ global.github = 'https://github.com/Alien-alfa/'
 //-------------
 global.insta = 'https://www.instagram.com/alienalfa/' 
 //-------------
-global.linkname = '𝘼𝙇𝙄𝙀𝙉 𝘼𝙇𝙁𝘼'
+global.linkname = 'ǫᴜᴇᴇɴ ᴄᴜᴛɪᴇ ᴍᴅ'
 //-------------
-global.mainfooter = '𝘼𝙇𝙄𝙀𝙉 𝘼𝙇𝙁𝘼' 
+global.mainfooter = 'ǫᴜᴇᴇɴ ᴄᴜᴛɪᴇ ᴍᴅ' 
 //-------------
 global.herokuapi = '' 
 //-------------
@@ -232,9 +232,9 @@ global.herokuapp = ''
 //-------------
 global.welcomeactive =  true
 //-------------
-global.alivemess = false
+global.alivemess = 'Hey i am alive now'
 //-------------
-global.aliveimage = false
+global.aliveimage = true
 //-------------
 global.speedmode =  'active'
 //-------------
@@ -249,7 +249,7 @@ global.anticall = false
 
 
 
-global.thumb = fs.readFileSync('./lib/lowdb/adapters/alfa.jpg')
+global.thumb = fs.readFileSync('./media/image/Cutie.jpg')
 
 global.mess = {
     success: 'ᴅᴏɴᴇ',
