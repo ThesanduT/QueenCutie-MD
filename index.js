@@ -1,67 +1,15 @@
-//═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
-//                                                                                                                                                     //
-//                                                             ＷＨＡＴＳＡＰＰ ＢＯＴ－ＭＤ                                                               //
-//                                                                                                                                                     //
-//                                                                    Ｖ：１．０．１                                                                     //
-//                                                                                                                                                     //
-//                                     ░█████╗░██╗░░░░░██╗███████╗███╗░░██╗  ░█████╗░██╗░░░░░███████╗░█████╗░                                          //
-//                                     ██╔══██╗██║░░░░░██║██╔════╝████╗░██║  ██╔══██╗██║░░░░░██╔════╝██╔══██╗                                          //
-//                                     ███████║██║░░░░░██║█████╗░░██╔██╗██║  ███████║██║░░░░░█████╗░░███████║                                          //
-//                                     ██╔══██║██║░░░░░██║██╔══╝░░██║╚████║  ██╔══██║██║░░░░░██╔══╝░░██╔══██║                                          //
-//                                     ██║░░██║███████╗██║███████╗██║░╚███║  ██║░░██║███████╗██║░░░░░██║░░██║                                          //
-//                                     ╚═╝░░╚═╝╚══════╝╚═╝╚══════╝╚═╝░░╚══╝  ╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚═╝░░╚═╝                                          //
-//                                                                                                                                                     //
-//                                                                                                                                                     //
-//═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
+/* Copyright (C) 2023 Thesandu Thewsara.
 
+Licensed under the  GNU-3.0 License;
+you may not use this file except in compliance with the License.
 
-// CURRENTLY RUNNING ON BETA VERSION!!
-/**
-   * MIT License
-* 
-   * Create By Dika Ardnt.
-   * Edited By Alien-Alfa
-   * Copyright (c) 2021 Alien-Alfa.
-* 
-   * Permission is hereby granted, free of charge, to any person obtaining a copy
-   * of this software and associated documentation files (the "Software"), to deal
-   * in the Software without restriction, including without limitation the rights
-   * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-   * copies of the Software, and to permit persons to whom the Software is
-   * furnished to do so, subject to the following conditions:
-* 
-   * The above copyright notice and this permission notice shall be included in all
-   * copies or substantial portions of the Software.
-* 
-   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-   * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-   * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-   * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-   * SOFTWARE.
+QueenCutie - Thesandu Thewsara
 */
-
-/**
- * //═══════════[ Thanks To ]══════════════//
- * 
- * Dika Ardnt.
- * Xeon Bot Inc.
- * Alien-Alfa.
- * SafwanGanz
- * A-J-M-A-L
- * Neeraj-x0
- * 
- * //════════════════════════════//
-*/
-
-// CURRENTLY RUNNING ON BETA VERSION!!
-
 
 
 let SessName = 'SessName'
 require('./config')
-const { default: AlfaConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
+const { default: CutieConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const { state, saveState } = useSingleFileAuthState(SessName)
 const pino = require('pino')
 const { Boom } = require('@hapi/boom')
@@ -79,9 +27,9 @@ const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
 const moment = require('moment-timezone')
 const authFile = SessName
-console.log('Generating Session File...')
+console.log('QueenCutie-MD is Starting...')
 let remsession = global.session
-console.log(require('chalk').redBright('Waiting 4 seconds to Generate your session file'))
+console.log(require('chalk').redBright('Waiting few seconds to Generate your session file'))
 setTimeout(() => {
 var low
 try {
@@ -117,32 +65,32 @@ global.db.data = {
 
 //Dont save
 
-async function startalfa() {
-    const AlienAlfa = AlfaConnect({
+async function startcutie() {
+    const QueenCutie = CutieConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['ᴀʟɪᴇɴ ᴀʟꜰᴀ-ᴍᴅ','safari','3.0.0'],
+        browser: ['QueenCutie-MD','safari','3.0.0'],
         auth: state
     })
 
-    store.bind(AlienAlfa.ev)
+    store.bind(QueenCutie.ev)
 
-    AlienAlfa.ev.on('messages.upsert', async chatUpdate => {
+    QueenCutie.ev.on('messages.upsert', async chatUpdate => {
         //console.log(JSON.stringify(chatUpdate, undefined, 2))
         try {
         mek = chatUpdate.messages[0]
         if (!mek.message) return
         mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
         if (mek.key && mek.key.remoteJid === 'status@broadcast') return
-        if (!AlienAlfa.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
+        if (!QueenCutie.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
-        m = smsg(AlienAlfa, mek, store)
-        require("./alfa")(AlienAlfa, m, chatUpdate, store)
+        m = smsg(QueenCutie, mek, store)
+        require("./thessa")(QueenCutie, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
     })
-//|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|
+
 
 
     
@@ -150,29 +98,29 @@ async function startalfa() {
 
 
     // anticall auto block
-    AlienAlfa.ws.on('CB:call', async (json) => {
+    QueenCutie.ws.on('CB:call', async (json) => {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
-    let  fek = await AlienAlfa.sendContact(callerId, global.owner)
-    AlienAlfa.sendMessage(callerId, { text: anticallmsg || `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted :  fek })
+    let  fek = await QueenCutie.sendContact(callerId, global.owner)
+    QueenCutie.sendMessage(callerId, { text: anticallmsg || `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted :  fek })
     await sleep(8000)
-    await AlienAlfa.updateBlockStatus(callerId, "block")
+    await QueenCutie.updateBlockStatus(callerId, "block")
     }
     })
 
 
-//|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|
 
 
 
-//|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|
+
+
 
     // Group Update
-    AlienAlfa.ev.on('groups.update', async pea => {
+    QueenCutie.ev.on('groups.update', async pea => {
         //console.log(pea)
      // Get Profile Picture Group
         try {
-        ppgc = await AlienAlfa.profilePictureUrl(pea[0].id, 'image')
+        ppgc = await QueenCutie.profilePictureUrl(pea[0].id, 'image')
         } catch {
         ppgc = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
         }
@@ -181,7 +129,7 @@ async function startalfa() {
             
             let mbc= `「 Group Settings Change 」\n\nGroup has been closed by admin, Now only admin can send messages !`
             
-            AlienAlfa.sendMessage(pea[0].id, {
+            QueenCutie.sendMessage(pea[0].id, {
              image: await getBuffer(ppgc),    caption: mbc,
              footer: `Group Settings Change Message \n${global.mainfooter}`,
              mentions:[orgnye],
@@ -197,7 +145,7 @@ async function startalfa() {
              
             let mbc= `Group Settings Change \n\nGroup has been opened by admin, Now participants can send messages !`
             
-            AlienAlfa.sendMessage(pea[0].id, {
+            QueenCutie.sendMessage(pea[0].id, {
              image: await getBuffer(ppgc),    caption: mbc,
              footer: `Group Settings Change Message \n${global.mainfooter}`,
              mentions:[orgnye],
@@ -212,7 +160,7 @@ async function startalfa() {
             
             let mbc= `Group Settings Change \n\nGroup info has been restricted, Now only admin can edit group info !`
             
-            AlienAlfa.sendMessage(pea[0].id, {
+            QueenCutie.sendMessage(pea[0].id, {
              image: await getBuffer(ppgc),    caption: mbc,
              footer: `Group Settings Change Message \n${global.mainfooter}`,
              mentions:[orgnye],
@@ -226,7 +174,7 @@ async function startalfa() {
             
             let mbc= `Group Settings Change \n\nGroup info has been opened, Now participants can edit group info !`
             
-            AlienAlfa.sendMessage(pea[0].id, {
+            QueenCutie.sendMessage(pea[0].id, {
              image: await getBuffer(ppgc),    caption: mbc,
              footer: `Group Settings Change Message \n${global.mainfooter}`,
              mentions:[orgnye],
@@ -239,7 +187,7 @@ async function startalfa() {
             
             let mbc= `Group Settings Change \n\nGroup Subject has been changed to *${pea[0].subject}*`
             
-            AlienAlfa.sendMessage(pea[0].id, {
+            QueenCutie.sendMessage(pea[0].id, {
              image: await getBuffer(ppgc),    caption: mbc,
              footer: `Group Settings Change Message \n${global.mainfooter}`,
              mentions:[orgnye],
@@ -250,7 +198,7 @@ async function startalfa() {
       }
      })
 
-//|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|
+
 
 
     //randoming function
@@ -262,28 +210,28 @@ let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
 
 
-//|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|
 
 
 
 
 
-    AlienAlfa.ev.on('group-participants.update', async (anu) => {
+
+    QueenCutie.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
         try {
-            let metadata = await AlienAlfa.groupMetadata(anu.id)
+            let metadata = await QueenCutie.groupMetadata(anu.id)
             let participants = anu.participants
             for (let num of participants) {
                 // Get Profile Picture User
                 try {
-                    ppuser = await AlienAlfa.profilePictureUrl(num, 'image')
+                    ppuser = await QueenCutie.profilePictureUrl(num, 'image')
                 } catch {
                     ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
 
                 //Get Profile Picture Group\\
                 try {
-                    ppgroup = await AlienAlfa.profilePictureUrl(anu.id, 'image')
+                    ppgroup = await QueenCutie.profilePictureUrl(anu.id, 'image')
                 } catch {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
@@ -291,7 +239,7 @@ let docs = pickRandom(documents)
 
 
 
-//|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|
+
 
             
 
@@ -306,8 +254,8 @@ let docs = pickRandom(documents)
                 return teks.replace(/['@s whatsapp.net']/g, " ");
                 }
         resa = `${mestes(hesa)}`
-            const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-      const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+            const xtime = moment.tz('Asia/Colombo').format('HH:mm:ss')
+      const xdate = moment.tz('Asia/Colombo').format('DD/MM/YYYY')
 const xmembers = metadata.participants.length
             orgnye = num
             mbc = `
@@ -318,13 +266,13 @@ Hey @${num.split("@")[0]}
 \n ${metadata.desc}
 
 
-*Powered by 𝐀𝐥𝐢𝐞𝐧-𝐀𝐥𝐟𝐚*
+*QueenCutie-MD*
 `
 
 
 
 
-                AlienAlfa.sendMessage(anu.id, {
+                QueenCutie.sendMessage(anu.id, {
             image: await getBuffer(ppuser),    caption: mbc,
             footer: `${global.mainfooter}`,
         mentions:[orgnye],
@@ -354,8 +302,8 @@ if (anu.action == 'remove') {
                 return teks.replace(/['@s whatsapp.net']/g, " ");
                 }
         resa = `${mestes(hesa)}`
-                        const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-      const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                        const xtime = moment.tz('Asia/Colombo').format('HH:mm:ss')
+      const xdate = moment.tz('Asia/Colombo').format('DD/MM/YYYY')
 const xmembers = metadata.participants.length
                 orgnye = num
             mbc = `
@@ -364,11 +312,11 @@ const xmembers = metadata.participants.length
 𝕃𝕖𝕗𝕥 : ${xtime} ${xdate}
 
 
-*Powered by 𝐀𝐥𝐢𝐞𝐧-𝐀𝐥𝐟𝐚*
+*QueenCutie-MD*
 `
 
 
-AlienAlfa.sendMessage(anu.id, {
+QueenCutie.sendMessage(anu.id, {
 image: await getBuffer(ppuser),    caption: mbc,
 footer: `${global.mainfooter}`,
 mentions:[orgnye],
@@ -390,7 +338,7 @@ templateButtons: [
 })
 
 
-//|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|
+
 
 
 
@@ -398,7 +346,7 @@ templateButtons: [
 
 
     //Setting\\
-    AlienAlfa.decodeJid = (jid) => {
+    QueenCutie.decodeJid = (jid) => {
         if (!jid) return jid
         if (/:\d+@/gi.test(jid)) {
             let decode = jidDecode(jid) || {}
@@ -406,38 +354,38 @@ templateButtons: [
         } else return jid
     }
     
-    AlienAlfa.ev.on('contacts.update', update => {
+    QueenCutie.ev.on('contacts.update', update => {
         for (let contact of update) {
-            let id = AlienAlfa.decodeJid(contact.id)
+            let id = QueenCutie.decodeJid(contact.id)
             if (store && store.contacts) store.contacts[id] = { id, name: contact.notify }
         }
     })
 
-    AlienAlfa.getName = (jid, withoutContact  = false) => {
-        id = AlienAlfa.decodeJid(jid)
-        withoutContact = AlienAlfa.withoutContact || withoutContact 
+    QueenCutie.getName = (jid, withoutContact  = false) => {
+        id = QueenCutie.decodeJid(jid)
+        withoutContact = QueenCutie.withoutContact || withoutContact 
         let v
         if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
             v = store.contacts[id] || {}
-            if (!(v.name || v.subject)) v = AlienAlfa.groupMetadata(id) || {}
+            if (!(v.name || v.subject)) v = QueenCutie.groupMetadata(id) || {}
             resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'))
         })
         else v = id === '0@s.whatsapp.net' ? {
             id,
             name: 'WhatsApp'
-        } : id === AlienAlfa.decodeJid(AlienAlfa.user.id) ?
-            AlienAlfa.user :
+        } : id === QueenCutie.decodeJid(QueenCutie.user.id) ?
+            QueenCutie.user :
             (store.contacts[id] || {})
             return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
     }
     
-    AlienAlfa.sendContact = async (jid, kon, quoted = '', opts = {}) => {
+    QueenCutie.sendContact = async (jid, kon, quoted = '', opts = {}) => {
 	let list = []
 	for (let i of kon) {
 	    list.push({
-	    	displayName: await AlienAlfa.getName(i + '@s.whatsapp.net'),
+	    	displayName: await QueenCutie.getName(i + '@s.whatsapp.net'),
 	    	vcard: `BEGIN:VCARD\nVERSION:3.0\n
-            N:${await AlienAlfa.getName(i + '@s.whatsapp.net')}\n
+            N:${await QueenCutie.getName(i + '@s.whatsapp.net')}\n
             FN:${global.ownername}\n
             item1.TEL;waid=${i}:${i}\n
             item1.X-ABLabel:Click here to chat\n
@@ -452,11 +400,11 @@ templateButtons: [
 
 	    })
 	}
-	AlienAlfa.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
+	QueenCutie.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
     }
     
-    AlienAlfa.setStatus = (status) => {
-        AlienAlfa.query({
+    QueenCutie.setStatus = (status) => {
+        QueenCutie.query({
             tag: 'iq',
             attrs: {
                 to: '@s.whatsapp.net',
@@ -472,32 +420,32 @@ templateButtons: [
         return status
     }
     if (worktype = 'public')
-     AlienAlfa.public = true
+     QueenCutie.public = true
     else 
-    AlienAlfa.public = false
+    QueenCutie.public = false
 
 
 
 
-    AlienAlfa.serializeM = (m) => smsg(AlienAlfa, m, store)
+    QueenCutie.serializeM = (m) => smsg(QueenCutie, m, store)
 
-    AlienAlfa.ev.on('connection.update', async (update) => {
+    QueenCutie.ev.on('connection.update', async (update) => {
         const { connection, lastDisconnect } = update	    
         if (connection === 'close') {
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode
-            if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); AlienAlfa.logout(); }
-            else if (reason === DisconnectReason.connectionClosed) { console.log("Connection closed, reconnecting...."); startalfa(); }
-            else if (reason === DisconnectReason.connectionLost) { console.log("Connection Lost from Server, reconnecting..."); startalfa(); }
-            else if (reason === DisconnectReason.connectionReplaced) { console.log("Connection Replaced, Another New Session Opened, Please Close Current Session First"); AlienAlfa.logout(); }
-            else if (reason === DisconnectReason.loggedOut) { console.log(`Device Logged Out, Please Scan Again And Run.`); AlienAlfa.logout(); }
-            else if (reason === DisconnectReason.restartRequired) { console.log("Restart Required, Restarting..."); startalfa(); }
-            else if (reason === DisconnectReason.timedOut) { console.log("Connection TimedOut, Reconnecting..."); startalfa(); }
-            else AlienAlfa.end(`Unknown DisconnectReason: ${reason}|${connection}`)
+            if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); QueenCutie.logout(); }
+            else if (reason === DisconnectReason.connectionClosed) { console.log("Connection closed, reconnecting...."); startcutie(); }
+            else if (reason === DisconnectReason.connectionLost) { console.log("Connection Lost from Server, reconnecting..."); startcutie(); }
+            else if (reason === DisconnectReason.connectionReplaced) { console.log("Connection Replaced, Another New Session Opened, Please Close Current Session First"); QueenCutie.logout(); }
+            else if (reason === DisconnectReason.loggedOut) { console.log(`Device Logged Out, Please Scan Again And Run.`); QueenCutie.logout(); }
+            else if (reason === DisconnectReason.restartRequired) { console.log("Restart Required, Restarting..."); startcutie(); }
+            else if (reason === DisconnectReason.timedOut) { console.log("Connection TimedOut, Reconnecting..."); startcutie(); }
+            else QueenCutie.end(`Unknown DisconnectReason: ${reason}|${connection}`)
         }
         console.log('Connected...', update)
     })
 
-    AlienAlfa.ev.on('creds.update', saveState)
+    QueenCutie.ev.on('creds.update', saveState)
 
     // Add Other
     /** Send Button 5 Image
@@ -510,8 +458,8 @@ templateButtons: [
      * @param {*} options
      * @returns
      */
-    AlienAlfa.send5ButImg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
-        let message = await prepareWAMessageMedia({ image: img }, { upload: AlienAlfa.waUploadToServer })
+    QueenCutie.send5ButImg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
+        let message = await prepareWAMessageMedia({ image: img }, { upload: QueenCutie.waUploadToServer })
         var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
         templateMessage: {
         hydratedTemplate: {
@@ -522,7 +470,7 @@ templateButtons: [
             }
             }
             }), options)
-            AlienAlfa.relayMessage(jid, template.message, { messageId: template.key.id })
+            QueenCutie.relayMessage(jid, template.message, { messageId: template.key.id })
     }
 
     /**
@@ -534,7 +482,7 @@ templateButtons: [
      * @param {*} quoted 
      * @param {*} options 
      */
-    AlienAlfa.sendButtonText = (jid, buttons = [], text, footer, quoted = '', options = {}) => {
+    QueenCutie.sendButtonText = (jid, buttons = [], text, footer, quoted = '', options = {}) => {
         let buttonMessage = {
             text,
             footer,
@@ -542,7 +490,7 @@ templateButtons: [
             headerType: 2,
             ...options
         }
-        AlienAlfa.sendMessage(jid, buttonMessage, { quoted, ...options })
+        QueenCutie.sendMessage(jid, buttonMessage, { quoted, ...options })
     }
     
     /**
@@ -553,7 +501,7 @@ templateButtons: [
      * @param {*} options 
      * @returns 
      */
-    AlienAlfa.sendText = (jid, text, quoted = '', options) => AlienAlfa.sendMessage(jid, { text: text, ...options }, { quoted })
+    QueenCutie.sendText = (jid, text, quoted = '', options) => QueenCutie.sendMessage(jid, { text: text, ...options }, { quoted })
 
     /**
      * 
@@ -564,9 +512,9 @@ templateButtons: [
      * @param {*} options 
      * @returns 
      */
-    AlienAlfa.sendImage = async (jid, path, caption = '', quoted = '', options) => {
+    QueenCutie.sendImage = async (jid, path, caption = '', quoted = '', options) => {
 	let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
-        return await AlienAlfa.sendMessage(jid, { image: buffer, caption: caption, ...options }, { quoted })
+        return await QueenCutie.sendMessage(jid, { image: buffer, caption: caption, ...options }, { quoted })
     }
 
     /**
@@ -578,9 +526,9 @@ templateButtons: [
      * @param {*} options 
      * @returns 
      */
-    AlienAlfa.sendVideo = async (jid, path, caption = '', quoted = '', gif = false, options) => {
+    QueenCutie.sendVideo = async (jid, path, caption = '', quoted = '', gif = false, options) => {
         let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
-        return await AlienAlfa.sendMessage(jid, { video: buffer, caption: caption, gifPlayback: gif, ...options }, { quoted })
+        return await QueenCutie.sendMessage(jid, { video: buffer, caption: caption, gifPlayback: gif, ...options }, { quoted })
     }
 
     /**
@@ -592,9 +540,9 @@ templateButtons: [
      * @param {*} options 
      * @returns 
      */
-    AlienAlfa.sendAudio = async (jid, path, quoted = '', ptt = false, options) => {
+    QueenCutie.sendAudio = async (jid, path, quoted = '', ptt = false, options) => {
         let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
-        return await AlienAlfa.sendMessage(jid, { audio: buffer, ptt: ptt, ...options }, { quoted })
+        return await QueenCutie.sendMessage(jid, { audio: buffer, ptt: ptt, ...options }, { quoted })
     }
 
     /**
@@ -605,7 +553,7 @@ templateButtons: [
      * @param {*} options 
      * @returns 
      */
-    AlienAlfa.sendTextWithMentions = async (jid, text, quoted, options = {}) => AlienAlfa.sendMessage(jid, { text: text, contextInfo: { mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(v => v[1] + '@s.whatsapp.net') }, ...options }, { quoted })
+    QueenCutie.sendTextWithMentions = async (jid, text, quoted, options = {}) => QueenCutie.sendMessage(jid, { text: text, contextInfo: { mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(v => v[1] + '@s.whatsapp.net') }, ...options }, { quoted })
 
     /**
      * 
@@ -615,7 +563,7 @@ templateButtons: [
      * @param {*} options 
      * @returns 
      */
-    AlienAlfa.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+    QueenCutie.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
         let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         let buffer
         if (options && (options.packname || options.author)) {
@@ -624,7 +572,7 @@ templateButtons: [
             buffer = await imageToWebp(buff)
         }
 
-        await AlienAlfa.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
+        await QueenCutie.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
         return buffer
     }
 
@@ -636,7 +584,7 @@ templateButtons: [
      * @param {*} options 
      * @returns 
      */
-    AlienAlfa.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+    QueenCutie.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
         let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         let buffer
         if (options && (options.packname || options.author)) {
@@ -645,7 +593,7 @@ templateButtons: [
             buffer = await videoToWebp(buff)
         }
 
-        await AlienAlfa.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
+        await QueenCutie.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
         return buffer
     }
 	
@@ -656,7 +604,7 @@ templateButtons: [
      * @param {*} attachExtension 
      * @returns 
      */
-    AlienAlfa.downloadAndSaveMediaMessage = async (message, filename, attachExtension = true) => {
+    QueenCutie.downloadAndSaveMediaMessage = async (message, filename, attachExtension = true) => {
         let quoted = message.msg ? message.msg : message
         let mime = (message.msg || message).mimetype || ''
         let messageType = message.mtype ? message.mtype.replace(/Message/gi, '') : mime.split('/')[0]
@@ -672,7 +620,7 @@ templateButtons: [
         return trueFileName
     }
 
-    AlienAlfa.downloadMediaMessage = async (message) => {
+    QueenCutie.downloadMediaMessage = async (message) => {
         let mime = (message.msg || message).mimetype || ''
         let messageType = message.mtype ? message.mtype.replace(/Message/gi, '') : mime.split('/')[0]
         const stream = await downloadContentFromMessage(message, messageType)
@@ -694,8 +642,8 @@ templateButtons: [
      * @param {*} options 
      * @returns 
      */
-    AlienAlfa.sendMedia = async (jid, path, fileName = '', caption = '', quoted = '', options = {}) => {
-        let types = await AlienAlfa.getFile(path, true)
+    QueenCutie.sendMedia = async (jid, path, fileName = '', caption = '', quoted = '', options = {}) => {
+        let types = await QueenCutie.getFile(path, true)
            let { mime, ext, res, data, filename } = types
            if (res && res.status !== 200 || file.length <= 65536) {
                try { throw { json: JSON.parse(file.toString()) } }
@@ -715,7 +663,7 @@ templateButtons: [
        else if (/video/.test(mime)) type = 'video'
        else if (/audio/.test(mime)) type = 'audio'
        else type = 'document'
-       await AlienAlfa.sendMessage(jid, { [type]: { url: pathFile }, caption, mimetype, fileName, ...options }, { quoted, ...options })
+       await QueenCutie.sendMessage(jid, { [type]: { url: pathFile }, caption, mimetype, fileName, ...options }, { quoted, ...options })
        return fs.promises.unlink(pathFile)
        }
 
@@ -727,7 +675,7 @@ templateButtons: [
      * @param {*} options 
      * @returns 
      */
-    AlienAlfa.copyNForward = async (jid, message, forceForward = false, options = {}) => {
+    QueenCutie.copyNForward = async (jid, message, forceForward = false, options = {}) => {
         let vtype
 		if (options.readViewOnce) {
 			message.message = message.message && message.message.ephemeralMessage && message.message.ephemeralMessage.message ? message.message.ephemeralMessage.message : (message.message || undefined)
@@ -758,11 +706,11 @@ templateButtons: [
                 }
             } : {})
         } : {})
-        await AlienAlfa.relayMessage(jid, waMessage.message, { messageId:  waMessage.key.id })
+        await QueenCutie.relayMessage(jid, waMessage.message, { messageId:  waMessage.key.id })
         return waMessage
     }
 
-    AlienAlfa.cMod = (jid, copy, text = '', sender = AlienAlfa.user.id, options = {}) => {
+    QueenCutie.cMod = (jid, copy, text = '', sender = QueenCutie.user.id, options = {}) => {
         //let copy = message.toJSON()
 		let mtype = Object.keys(copy.message)[0]
 		let isEphemeral = mtype === 'ephemeralMessage'
@@ -783,15 +731,15 @@ templateButtons: [
 		if (copy.key.remoteJid.includes('@s.whatsapp.net')) sender = sender || copy.key.remoteJid
 		else if (copy.key.remoteJid.includes('@broadcast')) sender = sender || copy.key.remoteJid
 		copy.key.remoteJid = jid
-		copy.key.fromMe = sender === AlienAlfa.user.id
+		copy.key.fromMe = sender === QueenCutie.user.id
 
         return proto.WebMessageInfo.fromObject(copy)
     }
 
 
 //send 5 button image by  
-    AlienAlfa.send5ButImg = async (jid , text = '' , footer = '', img, but = [], thumb, options = {}) =>{
-        let message = await prepareWAMessageMedia({ image: img, jpegThumbnail:thumb }, { upload: AlienAlfa.waUploadToServer })
+    QueenCutie.send5ButImg = async (jid , text = '' , footer = '', img, but = [], thumb, options = {}) =>{
+        let message = await prepareWAMessageMedia({ image: img, jpegThumbnail:thumb }, { upload: QueenCutie.waUploadToServer })
         var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
         templateMessage: {
         hydratedTemplate: {
@@ -802,13 +750,13 @@ templateButtons: [
             }
             }
             }), options)
-            AlienAlfa.relayMessage(jid, template.message, { messageId: template.key.id })
+            QueenCutie.relayMessage(jid, template.message, { messageId: template.key.id })
     }
 
 
     //send5butvid by  
-        AlienAlfa.send5ButVid = async (jid , text = '' , footer = '', vid, but = [], options = {}) =>{
-        let message = await prepareWAMessageMedia({ video: vid }, { upload: AlienAlfa.waUploadToServer })
+        QueenCutie.send5ButVid = async (jid , text = '' , footer = '', vid, but = [], options = {}) =>{
+        let message = await prepareWAMessageMedia({ video: vid }, { upload: QueenCutie.waUploadToServer })
         var template = generateWAMessageFromContent(jid, proto.Message.fromObject({
         templateMessage: {
         hydratedTemplate: {
@@ -819,24 +767,24 @@ templateButtons: [
             }
             }
             }), options)
-            AlienAlfa.relayMessage(jid, template.message, { messageId: template.key.id })
+            QueenCutie.relayMessage(jid, template.message, { messageId: template.key.id })
     }
     
     
     //send5butmsg by  
-            AlienAlfa.send5ButMsg = (jid, text = '' , footer = '', but = []) =>{
+            QueenCutie.send5ButMsg = (jid, text = '' , footer = '', but = []) =>{
         let templateButtons = but
         var templateMessage = {
         text: text,
         footer: footer,
         templateButtons: templateButtons
         }
-        AlienAlfa.sendMessage(jid, templateMessage)
+        QueenCutie.sendMessage(jid, templateMessage)
         }
 
 
 //sendlistmsg by  
-        AlienAlfa.sendListMsg = (jid, text = '', footer = '', title = '' , butText = '', sects = [], quoted) => {
+        QueenCutie.sendListMsg = (jid, text = '', footer = '', title = '' , butText = '', sects = [], quoted) => {
         let sections = sects
         var listMes = {
         text: text,
@@ -845,13 +793,13 @@ templateButtons: [
         buttonText: butText,
         sections
         }
-        AlienAlfa.sendMessage(jid, listMes, { quoted: quoted })
+        QueenCutie.sendMessage(jid, listMes, { quoted: quoted })
         }
 
 
     //send5butgif by  
-        AlienAlfa.send5ButGif = async (jid , text = '' , footer = '', gif, but = [], options = {}) =>{
-        let message = await prepareWAMessageMedia({ video: gif, gifPlayback: true }, { upload: AlienAlfa.waUploadToServer })
+        QueenCutie.send5ButGif = async (jid , text = '' , footer = '', gif, but = [], options = {}) =>{
+        let message = await prepareWAMessageMedia({ video: gif, gifPlayback: true }, { upload: QueenCutie.waUploadToServer })
         var template = generateWAMessageFromContent(jid, proto.Message.fromObject({
         templateMessage: {
         hydratedTemplate: {
@@ -862,7 +810,7 @@ templateButtons: [
             }
             }
             }), options)
-            AlienAlfa.relayMessage(jid, template.message, { messageId: template.key.id })
+            QueenCutie.relayMessage(jid, template.message, { messageId: template.key.id })
     }
 
 
@@ -871,7 +819,7 @@ templateButtons: [
      * @param {*} path 
      * @returns 
      */
-    AlienAlfa.getFile = async (PATH, save) => {
+    QueenCutie.getFile = async (PATH, save) => {
         let res
         let data = Buffer.isBuffer(PATH) ? PATH : /^data:.*?\/.*?;base64,/i.test(PATH) ? Buffer.from(PATH.split`,`[1], 'base64') : /^https?:\/\//.test(PATH) ? await (res = await getBuffer(PATH)) : fs.existsSync(PATH) ? (filename = PATH, fs.readFileSync(PATH)) : typeof PATH === 'string' ? PATH : Buffer.alloc(0)
         //if (!Buffer.isBuffer(data)) throw new TypeError('Result is not a buffer')
@@ -891,10 +839,10 @@ templateButtons: [
 
     }
 
-    return AlienAlfa
+    return QueenCutie
 }
 
-startalfa()
+startcutie()
 
 }, 4000)
 
@@ -902,7 +850,7 @@ const html = `
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Secktor-Md</title>
+    <title>QueenCutie-MD</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script>
       setTimeout(() => {
@@ -943,13 +891,13 @@ const html = `
   </head>
   <body>
     <section>
-    Hello from AlienAlfa!
+    Hello from QueenCutie!
     </section>
   </body>
 </html>
 `
 app.get("/", (req, res) => res.type('html').send(html));
-app.listen(port, () => console.log(`AlienAlfa Server listening on port http://localhost:${port}!`));
+app.listen(port, () => console.log(`QueenCutie Server listening on port http://localhost:${port}!`));
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
