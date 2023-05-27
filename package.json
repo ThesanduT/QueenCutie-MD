@@ -1,7 +1,7 @@
 {
-  "name": "AlienAlfaBot-MD",
+  "name": "QueenCutie-MD",
   "version": "2.3.0",
-  "description": "Beta Test By an Alien",
+  "description": "QueenCutie whatsapp bot by ThesanduT",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
@@ -20,7 +20,7 @@
     "2021",
     "wabase-md"
   ],
-  "author": "Alien-Alfa.",
+  "author": "ThesanduT",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "^4.1.0",
@@ -77,10 +77,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alien-Alfa/WhatsAppBot-MD.git"
+    "url": "git+https://github.com/ThesanduT/QueenCutie-MD.git"
   },
   "bugs": {
-    "url": "https://github.com/Alien-Alfa/WhatsAppBot-MD/issues"
+    "url": "https://github.com/ThesanduT/QueenCutie-MD/issues"
   },
-  "homepage": "https://github.com/Alien-Alfa/WhatsAppBot-MD#readme"
+  "homepage": "https://github.com/ThesanduT/QueenCutie-MD#readme"
 }
