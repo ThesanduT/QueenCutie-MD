@@ -1,8 +1,8 @@
 FROM node:lts-buster
 
-RUN git clone https://github.com/Alien-alfa/WhatsAppBot-MD /root/AlienAlfa
+RUN git clone https://github.com/ThesanduT/QueenCutie-MD /root/ThesanduT
 
-WORKDIR /root/AlienAlfa/
+WORKDIR /root/ThesanduT/
 
 RUN apt-get update && \
   apt-get install -y \
