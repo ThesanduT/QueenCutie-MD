@@ -1,204 +1,26 @@
 
 {
-	"name": "QueenCutie-MD",
-	"description": "QueenCutie MD",
-	"repository": "https://github.com/ThesanduT/QueenCutie-MD",
-	"website": "https://small-sharp-tool.com/",
-	"logo": "https://avatars.githubusercontent.com/u/94118388?s=400&u=ef057537939047c70326c1221c8088d0c2602d8b&v=4",
-	"keywords": ["multi-device","WhatsApp Bot"],
-    	"stack": "container",
-	"env": { 
-    "OWNER": {
-            "description": "Enter your number",
-            "required": false,
-            "value": "0,94778763517"
-        }, 
-	"WORKTYPE": {
-            "description": "change the Work Type (public or private)",
-            "required": true,
-            "value": "public"
-        },
-	"AUTOREAD": {
-            "description": "Autoreading masseges",
-            "required": false,
-            "value": ">active"
-        },
-	"BETA_FUNCTIONS": {
-            "description": "Experimental Functions and Commands (Remember This Might Crash Your BOT)",
-            "required": false,
-            "value": ">active"
-        },
-	"AUTO_DOWNLOADER": {
-            "description": "Auto Downloader (BETA) Insta and YouTube",
-            "required": true,
-            "value": ">active"
-        },
-	"STICKER_PACK": {
-            "description": "Sticker pack & author name. (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "ＡＬＩＥＮ,ＡＬＦＡ"
-        }, 
-    "URLBUTTON1": {
-            "description": "URL Button Name and link (leave it if you Wish to use the default:Instagram)",
-            "required": false,
-            "value": "Instagram,https://instagram.com/"
-        },
-    "URLBUTTON2": {
-            "description": "Second URL Button Name and link (leave it if you Wish to use the default:YouTube)",
-            "required": false,
-            "value": "YouTube,https://youtube.com/"
-        },
-    "REPLY_TEXT_LINK": {
-            "description": "Adplay Text",
-            "required": false,
-            "value": "nill,nill"
-        },
-    "PROFILE_IMAGE": {
-            "description": "Main Image For The Bot (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "https://avatars.githubusercontent.com/u/94118388?s=400&u=ef057537939047c70326c1221c8088d0c2602d8b&v=4"
-        },
-    "URL_IMAGE": {
-            "description": "Image For The Adplay (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "https://avatars.githubusercontent.com/u/94118388?s=400&u=ef057537939047c70326c1221c8088d0c2602d8b&v=4"
-        },
-    "GREETING": {
-            "description": "Greeting Message (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "Hey  👋🏻"
-        },
-    "SUDO": {
-            "description": "Add superuser to this bot",
-            "required": false,
-            "value": "0,94778763517"
-        }, 
-    "LISTICON": {
-            "description": "small logo or icon to appear in menu (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "✩"
-        },
-    "WATERMARK": {
-            "description": "watermark for the bot (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "𝚀𝚄𝙴𝙴𝙽 𝙲𝚄𝚃𝙸𝙴 - 𝙼𝙳"
-        },
-    "BOTNAME": {
-            "description": "Name of The BOT (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "𝗤𝗨𝗘𝗘𝗡 𝗖𝗨𝗧𝗜𝗘-𝗠𝗗"
-        },
-    "ICON": {
-            "description": "Icon to appear in menu (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "✩"
-        },
-    "MAIL": {
-            "description": "Premium user number (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "tthewsara@gmail.com"
-        },
-    "YOUTUBE": {
-            "description": "Youtube Channel Link (leave it if you dont have one)",
-            "required": false,
-            "value": "https://youtube.com/c/ThesanduThewsara"
-        },
-    "GITHUB": {
-            "description": "Your Github Account URL (leave it if you dont have one)",
-            "required": false,
-            "value": "https://github.com/ThesanduT/"
-        },
-    "INSTAGRAM": {
-            "description": "Your Instagram Id URL (leave it if you dont have one)",
-            "required": false,
-            "value": "https://www.instagram.com/__thes_and.___/"
-        },
-    "NAME": {
-            "description": "Owner Name (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "ᴛʜᴇsᴀɴᴅᴜ ᴛʜᴇᴡsᴀʀᴀ"
-        },
-    "FOOTER": {
-            "description": "Footer Text For The Bot (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "𝐐𝐔𝐄𝐄𝐍 𝐂𝐔𝐓𝐈𝐄 -𝐌𝐃"
-        },
-    "HEROKU_APP_NAME": {
-            "description": "Heroku App name to manage the worker (you canot use restart if u dont fill thsi and HEROKU_API)",
-            "required": true
-        },
-    "HEROKU_API_KEY": {
-            "description": "Heroku API key for managing the worker (You canot use restart if u dont fill thsi and APP_NAME)",
-            "required": true
-        },
-	"BETA_FUNCTIONS1": {
-            "description": "Experimental Functions and Commands (Remember This Might Crash Your BOT)",
-            "required": false,
-            "value": ">active"
-        },
-	"ANTICALL_MSG": {
-            "description": "Mesage which will sent to the blocked user for calling the bot",
-            "required": false,
-            "value": "default"
-        },
-    "SESSION_ID": {
-            "description": "Add your Session ID here you got from Your Bot",
-            "required": true
-        },
-    "ZENS_API": {
-            "description": "Get an API key From https://zenzapi.xyz To Use The API Functions.",
-            "required": false,
-            
-        },
-	"ALIVE_MESS": {
-            "description": "Set Alive Message. (leave it if you Wish to use the default)",
-            "required": false
-        },
-    "ALIVE_IMAGE": {
-            "description": "Set Alive Message Image",
-            "required": false,
-            "value": "https://avatars.githubusercontent.com/u/94118388?s=400&u=ef057537939047c70326c1221c8088d0c2602d8b&v=4"
-        },
-    "LITE_MODE": {
-            "description": "Use Fancy Templayes Rather Than Normal Messages",
-            "required": false,
-            "value": ">active"
-        },
-	"OWNER_MESS": {
-            "description": "Set Owner message. (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "ʜᴇʏ ᴛʜɪꜱ ɪꜱ ᴍʏ ᴏᴡɴᴇʀ, ᴘʟᴇᴀꜱᴇ ᴛᴀʟᴋ ɪɴ ᴇɴɢʟɪꜱʜ"
-        },
-    "LIST_MESSAGE": {
-            "description": "Footer Message Foe List Menu (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "ʟɪꜱᴛ ᴍᴇɴᴜ"
-        },
-    "MENU_MESSAGE": {
-            "description": "Main footer Message To Be Shown In Main Menu (shows when use command .menu) (leave it if you Wish to use the default)",
-            "required": false,
-            "value": "ɪɴꜰᴏ ᴍᴇɴᴜ"
-        }
-},
-	
-	"buildpacks": [
+  "name": "WHATSAPP BOT",
+  "description": "nodejs baileys based whatsapp bot",
+  "repository": "https://github.com/ThesanduT/QueenCutie-MD",
+  "keywords": ["whatsapp-bot", "pvx-bot"],
+  "buildpacks": [
     {
-      "url": "heroku/nodejs"
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
     },
     {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
     },
     {
-      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
-    },
-    {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+      "url": "https://github.com/pathwaysmedical/heroku-buildpack-tesseract"
     }
   ],
-   "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "13"
+      }
     }
+  ]
 }
