@@ -1,10 +1,10 @@
 
 {
-	"name": "WhatsAppBot-MD",
-	"description": "Fully Costamisable Bot by, Alien-Alfa.",
-	"repository": "https://github.com/Alien-Alfa/WhatsAppBot-MD",
+	"name": "QueenCutie-MD",
+	"description": "QueenCutie MD",
+	"repository": "https://github.com/ThesanduT/QueenCutie-MD",
 	"website": "https://small-sharp-tool.com/",
-	"logo": "https://avatars.githubusercontent.com/u/64305844?v=4",
+	"logo": "https://avatars.githubusercontent.com/u/94118388?s=400&u=ef057537939047c70326c1221c8088d0c2602d8b&v=4",
 	"keywords": ["multi-device","WhatsApp Bot"],
     	"stack": "container",
 	"env": { 
