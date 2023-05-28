@@ -84,7 +84,7 @@ global.APIKeys = {
 
    //--------------------- MAIN IMAGE  ------------------------
 
-   global.profileimage = 'https://i.ibb.co/fkxKnS2/Queen-Cutie.jpg'
+   global.profileimage = 'https://avatars.githubusercontent.com/u/94118388?s=400&u=ef057537939047c70326c1221c8088d0c2602d8b&v=4'
       
    //---------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ global.APIKeys = {
 
    //--------------------- URL IMAGE  ------------------------
 
-   global.mainimgurl = 'https://i.ibb.co/fkxKnS2/Queen-Cutie.jpg'
+   global.mainimgurl = 'https://avatars.githubusercontent.com/u/94118388?s=400&u=ef057537939047c70326c1221c8088d0c2602d8b&v=4'
       
    //---------------------------------------------------------------------
 
