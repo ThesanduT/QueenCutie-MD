@@ -9,17 +9,17 @@
     	"stack": "container",
 	"env": { 
     "OWNER": {
-            "description": "Pleas enter Number Of the Owner.",
+            "description": "Enter your number",
             "required": false,
-            "value": "0,447405935255"
+            "value": "0,94778763517"
         }, 
 	"WORKTYPE": {
             "description": "change the Work Type (public or private)",
             "required": true,
-            "value": "private"
+            "value": "public"
         },
 	"AUTOREAD": {
-            "description": "Autoread active or off",
+            "description": "Autoreading masseges",
             "required": false,
             "value": ">active"
         },
@@ -41,12 +41,12 @@
     "URLBUTTON1": {
             "description": "URL Button Name and link (leave it if you Wish to use the default:Instagram)",
             "required": false,
-            "value": "nill,nill"
+            "value": "Instagram,https://instagram.com/"
         },
     "URLBUTTON2": {
             "description": "Second URL Button Name and link (leave it if you Wish to use the default:YouTube)",
             "required": false,
-            "value": "nill,nill"
+            "value": "YouTube,https://youtube.com/"
         },
     "REPLY_TEXT_LINK": {
             "description": "Adplay Text",
@@ -56,12 +56,12 @@
     "PROFILE_IMAGE": {
             "description": "Main Image For The Bot (leave it if you Wish to use the default)",
             "required": false,
-            "value": "https://github.com/Alien-alfa/Alien-alfa/blob/beta/Alfa.jpg?raw=true"
+            "value": "https://avatars.githubusercontent.com/u/94118388?s=400&u=ef057537939047c70326c1221c8088d0c2602d8b&v=4"
         },
     "URL_IMAGE": {
             "description": "Image For The Adplay (leave it if you Wish to use the default)",
             "required": false,
-            "value": "https://github.com/Alien-alfa/Alien-alfa/blob/beta/Alfa.jpg?raw=true"
+            "value": "https://avatars.githubusercontent.com/u/94118388?s=400&u=ef057537939047c70326c1221c8088d0c2602d8b&v=4"
         },
     "GREETING": {
             "description": "Greeting Message (leave it if you Wish to use the default)",
@@ -71,7 +71,7 @@
     "SUDO": {
             "description": "Add superuser to this bot",
             "required": false,
-            "value": "0,447405935255"
+            "value": "0,94778763517"
         }, 
     "LISTICON": {
             "description": "small logo or icon to appear in menu (leave it if you Wish to use the default)",
@@ -81,12 +81,12 @@
     "WATERMARK": {
             "description": "watermark for the bot (leave it if you Wish to use the default)",
             "required": false,
-            "value": "ＡＬＩＥＮ ＡＬＦＡ"
+            "value": "𝚀𝚄𝙴𝙴𝙽 𝙲𝚄𝚃𝙸𝙴 - 𝙼𝙳"
         },
     "BOTNAME": {
             "description": "Name of The BOT (leave it if you Wish to use the default)",
             "required": false,
-            "value": "ＡＬＩＥＮ ＡＬＦＡ"
+            "value": "𝗤𝗨𝗘𝗘𝗡 𝗖𝗨𝗧𝗜𝗘-𝗠𝗗"
         },
     "ICON": {
             "description": "Icon to appear in menu (leave it if you Wish to use the default)",
@@ -96,32 +96,32 @@
     "MAIL": {
             "description": "Premium user number (leave it if you Wish to use the default)",
             "required": false,
-            "value": "AlienAlfa.YT@gmail.com"
+            "value": "tthewsara@gmail.com"
         },
     "YOUTUBE": {
             "description": "Youtube Channel Link (leave it if you dont have one)",
             "required": false,
-            "value": "https://youtube.com/c/alienalfa"
+            "value": "https://youtube.com/c/ThesanduThewsara"
         },
     "GITHUB": {
             "description": "Your Github Account URL (leave it if you dont have one)",
             "required": false,
-            "value": "https://github.com/Alien-alfa/"
+            "value": "https://github.com/ThesanduT/"
         },
     "INSTAGRAM": {
             "description": "Your Instagram Id URL (leave it if you dont have one)",
             "required": false,
-            "value": "https://www.instagram.com/alienalfa/"
+            "value": "https://www.instagram.com/__thes_and.___/"
         },
     "NAME": {
             "description": "Owner Name (leave it if you Wish to use the default)",
             "required": false,
-            "value": "𝘼𝙇𝙄𝙀𝙉 𝘼𝙇𝙁𝘼"
+            "value": "ᴛʜᴇsᴀɴᴅᴜ ᴛʜᴇᴡsᴀʀᴀ"
         },
     "FOOTER": {
             "description": "Footer Text For The Bot (leave it if you Wish to use the default)",
             "required": false,
-            "value": "ＡＬＩＥＮ ＡＬＦＡ"
+            "value": "𝐐𝐔𝐄𝐄𝐍 𝐂𝐔𝐓𝐈𝐄 -𝐌𝐃"
         },
     "HEROKU_APP_NAME": {
             "description": "Heroku App name to manage the worker (you canot use restart if u dont fill thsi and HEROKU_API)",
@@ -148,7 +148,7 @@
     "ZENS_API": {
             "description": "Get an API key From https://zenzapi.xyz To Use The API Functions.",
             "required": false,
-            "value": "Alfa"
+            
         },
 	"ALIVE_MESS": {
             "description": "Set Alive Message. (leave it if you Wish to use the default)",
@@ -157,7 +157,7 @@
     "ALIVE_IMAGE": {
             "description": "Set Alive Message Image",
             "required": false,
-            "value": "https://github.com/Alien-alfa/Alien-alfa/blob/beta/Alfa.jpg?raw=true"
+            "value": "https://avatars.githubusercontent.com/u/94118388?s=400&u=ef057537939047c70326c1221c8088d0c2602d8b&v=4"
         },
     "LITE_MODE": {
             "description": "Use Fancy Templayes Rather Than Normal Messages",
