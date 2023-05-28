@@ -1,26 +1,33 @@
 
 {
-  "name": "WHATSAPP BOT",
-  "description": "nodejs baileys based whatsapp bot",
-  "repository": "https://github.com/ThesanduT/QueenCutie-MD",
-  "keywords": ["whatsapp-bot", "pvx-bot"],
-  "buildpacks": [
+	"name": "WhatsAppBot-MD",
+	"description": "Fully Costamisable Bot by, Alien-Alfa.",
+	"repository": "https://github.com/Alien-Alfa/WhatsAppBot-MD",
+	"website": "https://small-sharp-tool.com/",
+	"logo": "https://avatars.githubusercontent.com/u/64305844?v=4",
+	"keywords": ["multi-device","WhatsApp Bot"],
+    	"stack": "container",
+	
+	"buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+      "url": "heroku/nodejs"
     },
     {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-      "url": "https://github.com/pathwaysmedical/heroku-buildpack-tesseract"
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
   ],
-  "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "13"
-      }
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     }
-  ]
 }
+
+thessaa
