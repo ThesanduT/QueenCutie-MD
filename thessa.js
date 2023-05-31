@@ -24,8 +24,6 @@ const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, 
 const cheerio = require ("cheerio")
 let { msgFilter } = require('./lib/antispam')
 let { covid } = require('./lib/covid.js') 
-const { EmojiAPI } = require("emoji-api")
-const emoji = new EmojiAPI()
 const thiccysapi = require('textmaker-thiccy')
 const textpro = require('./lib/textpro')
 const { mediafireDl } = require('./lib/mediafire.js')
