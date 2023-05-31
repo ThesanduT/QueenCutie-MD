@@ -24,7 +24,6 @@ const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, 
 const cheerio = require ("cheerio")
 let { msgFilter } = require('./lib/antispam')
 let { covid } = require('./lib/covid.js') 
-//const { EmojiAPI } = require("emoji-api")
 const emoji = new EmojiAPI()
 const thiccysapi = require('textmaker-thiccy')
 const textpro = require('./lib/textpro')
@@ -704,23 +703,8 @@ AlienAlfa.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice.
 					}
 				  }
 
-//emoji 
-/*const emote = (satu, dua) => {
-try{	    
-const { EmojiAPI } = require("emoji-api");
-const emoji = new EmojiAPI();
-emoji.get(satu)
-.then(emoji => {
-const buttons = [{buttonId: "y", buttonText: {displayText:satu}, type: 1}]
-const buttonMessage = {image: {url: emoji.images[dua].url},caption: takeresult,footerText: `${botname}`,buttons: buttons,headerType: 4}
-AlienAlfa.sendMessage(from, buttonMessage, {quoted:m})
-})
-} catch (e) {
-reply("Emoji error, please enter another emoji\nNOTE : Just enter 1 emoji")
-}
-}
-*/
-      //Mute Chat\\
+		
+ //Mute Chat\\
       if (db.data.chats[m.chat].mute && !isAdmins && !isCreator) {
       return
       }
