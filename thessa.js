@@ -76,7 +76,15 @@ global.db = {
  let bcz = '  ▎▍▌▌▉▏▎▌▉▐▏▌▎'
 
 
+let buttonxnxxr = [
+    { buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },
+    { buttonId: 'menu', buttonText: { displayText: 'List Menu' }, type: 1 }
+]
+
+
+
 global.gversion = 'V 2.0.0'
+
 
 
 /*|⬡════════════════════════════════════════════|❝ Ⓒ𝙰𝙻𝙸𝙴𝙽 𝙰𝙻𝙵𝙰 𝙱𝙾𝚃 𝙱𝚈 𝚃𝙾𝚇𝙸𝙲 𝙰𝙻𝙸𝙴𝙽™ ❞|═══════════════════════════════════════════⬡|
@@ -4103,13 +4111,13 @@ let btn = [{
       url: `${linkurl2}`
   }
 }, {
-  quickReplyButton: {
-      displayText: '𝕄𝔼ℕ𝕌',
+  quickreplyButton: {
+      displayText: 'MENU',
       id: 'menu'
   }  
 }]
               
-   alienalfa.send5ButImg(m.chat, `${AlfaFont}`, `${alfafooter}`, tempimg, btn) 
+   alienalfa.send5ButImg(m.chat, `${AlfaFont}`, `${alfafooter}`, tempimg, btn, buttonxnxxr) 
 
 
 } catch(err) { m.reply(m.chat, `${err}`, m) }
