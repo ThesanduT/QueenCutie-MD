@@ -4093,7 +4093,7 @@ let anonymouschatmenu = `
   let tempimg = await (await fetch(`${profileimage}`)).buffer()
   
   let buttons = [
-                        { buttonId: 'menu', buttonText: { displayText: 'list menu'  }, type: 2 }
+                        { buttonId: 'menu', buttonText: { displayText: 'list menu'  }, type: 2 },
                         { buttonId: 'allmenu', buttonText: { displayText: 'All menu'  }, type: 2 }
 		]
               
