@@ -3149,7 +3149,7 @@ var fontchange = `${az} ${alfaNAME} ${ay}
    (m.chat, proto.Message.fromObject({
                    listMessage :{
                        title: ` `,
-                       description: menu,
+                       description: fontchange,
                        buttonText: "Menu",
                        footerText: `${alfaNAME}`,
                        listType: "SINGLE_SELECT",
@@ -4077,7 +4077,7 @@ let anonymouschatmenu = `
  ${dz} 
  ${ez}`
  
-       if (args[0] === 'grupmenu') anu = grupmenu
+       if (args[0] === 'gmenurup') anu = grupmenu
        if (args[0] === 'downloadmenu') anu = downloadmenu
        if (args[0] === 'searchmenu') anu = searchmenu
        if (args[0] === 'randommenu') anu = randommenu
@@ -4114,7 +4114,7 @@ let btn = [{
   }  
 }]
               
-   alienalfa.send5ButImg(m.chat, `${alfafooter}`, tempimg, btn) 
+   alienalfa.send5ButImg(m.chat, gmenurup, downloadmenu, searchmenu, randommenu, funmenu, voicemenu, ephotomenu, photomakermenu, convertmenu, mainmenu, databasemenu, anonymouschatmenu, ownermenu, makermenu, allmenu, `${alfafooter}`, tempimg, btn) 
 
 
 } catch(err) { m.reply(m.chat, `${err}`, m) }
