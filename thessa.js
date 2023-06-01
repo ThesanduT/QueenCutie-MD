@@ -555,7 +555,7 @@ AlienAlfa.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@$
   AlienAlfa.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
   }
   }
-//*anti bad words 
+/*anti bad words 
 if (antiToxic)
 if (bad.includes(messagesD)) {
 tos = ['Hey, watch your mouth','Never been taught how to speak?','Stop being toxic my friend🤢','Dont be toxic ']
