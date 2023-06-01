@@ -4093,9 +4093,14 @@ let anonymouschatmenu = `
   let tempimg = await (await fetch(`${profileimage}`)).buffer()
   
   let btn = [{
-  quickreplyButton: {
-      displayText: 'MENU',
+  quickReplyButton: {
+      displayText: 'List Menu',
       id: 'menu'
+  }
+}, {
+  quickReplyButton: {
+      displayText: 'All Menu',
+      url: 'allmenu'
   }  
 }]
               
