@@ -4136,22 +4136,10 @@ let anonymouschatmenu = `
   let tempimg = await (await fetch(`${profileimage}`)).buffer()
 
 
-let btn = [{
-  urlButton: {
-      displayText: `${linkbuttid1}`,
-      url: `${linkurl1}`
-  }
-}, {
-  urlButton: {
-      displayText: `${linkbuttid2}`,
-      url: `${linkurl2}`
-  }
-}, {
-  quickReplyButton: {
-      displayText: '𝕄𝔼ℕ𝕌',
-      id: 'menu'
-  }  
-}]
+let buttons = [
+                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '► ɴᴏ ᴡᴀᴛᴇʀᴍᴀʀᴋ' }, type: 2},
+                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '► ᴡɪᴛʜ ᴡᴀᴛᴇʀᴍᴀʀᴋ' }, type: 2}
+                ]
               
    alienalfa.send5ButImg(m.chat, `${AlfaFont}`, `${alfafooter}`, tempimg, btn) 
 
