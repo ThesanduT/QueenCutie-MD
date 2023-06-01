@@ -3149,7 +3149,7 @@ var fontchange = `${az} ${alfaNAME} ${ay}
    (m.chat, proto.Message.fromObject({
                    listMessage :{
                        title: ` `,
-                       description: AlfaFont,
+                       description: menu,
                        buttonText: "Menu",
                        footerText: `${alfaNAME}`,
                        listType: "SINGLE_SELECT",
@@ -4114,7 +4114,7 @@ let btn = [{
   }  
 }]
               
-   alienalfa.send5ButImg(m.chat, `${AlfaFont}`, `${alfafooter}`, tempimg, btn) 
+   alienalfa.send5ButImg(m.chat, `${alfafooter}`, tempimg, btn) 
 
 
 } catch(err) { m.reply(m.chat, `${err}`, m) }
