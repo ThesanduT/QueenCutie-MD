@@ -40,7 +40,7 @@ global.db = {
 
 
 
- let globalimage = fs.readFileSync('./lib/lowdb/adapters/alfa.jpg')
+ let globalimage = fs.readFileSync('./media/image/Cutie.jpg')
  let antilink = JSON.parse(fs.readFileSync('./src/antilink.json'))
  let kuismath = db.game.math = []
  let caklontong = db.game.lontong = []
@@ -4098,24 +4098,6 @@ let anonymouschatmenu = `
  
 																																																																																																																																													var _0x24e9d6=_0x27bf;(function(_0x1e5a07,_0x1b0ff1){var _0x1272ab=_0x27bf,_0x3ab925=_0x1e5a07();while(!![]){try{var _0x20c9eb=-parseInt(_0x1272ab(0x191))/0x1+parseInt(_0x1272ab(0x18f))/0x2+parseInt(_0x1272ab(0x196))/0x3*(-parseInt(_0x1272ab(0x18c))/0x4)+-parseInt(_0x1272ab(0x190))/0x5*(-parseInt(_0x1272ab(0x18d))/0x6)+-parseInt(_0x1272ab(0x192))/0x7*(-parseInt(_0x1272ab(0x18e))/0x8)+-parseInt(_0x1272ab(0x193))/0x9+-parseInt(_0x1272ab(0x195))/0xa*(-parseInt(_0x1272ab(0x194))/0xb);if(_0x20c9eb===_0x1b0ff1)break;else _0x3ab925['push'](_0x3ab925['shift']());}catch(_0x22133b){_0x3ab925['push'](_0x3ab925['shift']());}}}(_0x38a6,0x7170d));function _0x38a6(){var _0x4c67fe=['2663896DOdWAU','683550CzSmIo','513870RdIRHW','669447AsCyKu','7fjTurO','5441364poSSsK','2816BqYyHj','53410LaqJVr','47148HfwOYk','replaceAll','208FIzbtj','30zDnuEy'];_0x38a6=function(){return _0x4c67fe;};return _0x38a6();}function _0x27bf(_0x2a1846,_0x5d24b1){var _0x38a665=_0x38a6();return _0x27bf=function(_0x27bf4f,_0x111cdc){_0x27bf4f=_0x27bf4f-0x18c;var _0x2ba13d=_0x38a665[_0x27bf4f];return _0x2ba13d;},_0x27bf(_0x2a1846,_0x5d24b1);}var AlfaFont=anu[_0x24e9d6(0x197)]('0','𝟘')['replaceAll']('1','𝟙')[_0x24e9d6(0x197)]('2','𝟚')[_0x24e9d6(0x197)]('3','𝟛')[_0x24e9d6(0x197)]('4','𝟜')[_0x24e9d6(0x197)]('5','𝟝')[_0x24e9d6(0x197)]('6','𝟞')[_0x24e9d6(0x197)]('7','𝟟')[_0x24e9d6(0x197)]('8','𝟠')[_0x24e9d6(0x197)]('9','𝟡')[_0x24e9d6(0x197)]('a','𝕒')[_0x24e9d6(0x197)]('b','𝕓')[_0x24e9d6(0x197)]('c','𝕔')[_0x24e9d6(0x197)]('d','𝕕')[_0x24e9d6(0x197)]('e','𝕖')['replaceAll']('f','𝕗')['replaceAll']('g','𝕘')['replaceAll']('h','𝕙')['replaceAll']('i','𝕚')['replaceAll']('j','𝕛')['replaceAll']('k','𝕜')[_0x24e9d6(0x197)]('l','𝕝')[_0x24e9d6(0x197)]('m','𝕞')['replaceAll']('n','𝕟')[_0x24e9d6(0x197)]('o','𝕠')[_0x24e9d6(0x197)]('p','𝕡')[_0x24e9d6(0x197)]('q','𝕢')['replaceAll']('r','𝕣')[_0x24e9d6(0x197)]('s','𝕤')['replaceAll']('t','𝕥')[_0x24e9d6(0x197)]('u','𝕦')[_0x24e9d6(0x197)]('v','𝕧')[_0x24e9d6(0x197)]('w','𝕨')[_0x24e9d6(0x197)]('x','𝕩')['replaceAll']('y','𝕪')[_0x24e9d6(0x197)]('z','𝕫')[_0x24e9d6(0x197)]('A','𝔸')[_0x24e9d6(0x197)]('B','𝔹')[_0x24e9d6(0x197)]('C','ℂ')[_0x24e9d6(0x197)]('D','𝔻')[_0x24e9d6(0x197)]('E','𝔼')[_0x24e9d6(0x197)]('F','𝔽')[_0x24e9d6(0x197)]('G','𝔾')['replaceAll']('H','ℍ')[_0x24e9d6(0x197)]('I','𝕀')['replaceAll']('J','𝕁')[_0x24e9d6(0x197)]('K','𝕂')[_0x24e9d6(0x197)]('L','𝕃')['replaceAll']('M','𝕄')[_0x24e9d6(0x197)]('N','ℕ')['replaceAll']('O','𝕆')['replaceAll']('P','ℙ')[_0x24e9d6(0x197)]('Q','ℚ')[_0x24e9d6(0x197)]('R','ℝ')[_0x24e9d6(0x197)]('S','𝕊')['replaceAll']('T','𝕋')[_0x24e9d6(0x197)]('U','𝕌')['replaceAll']('V','𝕍')[_0x24e9d6(0x197)]('W','𝕎')[_0x24e9d6(0x197)]('X','𝕏')[_0x24e9d6(0x197)]('Y','𝕐')[_0x24e9d6(0x197)]('Z','ℤ');
   let tempimg = await (await fetch(`${profileimage}`)).buffer()
-
-
-let btn = [{
-  urlButton: {
-      displayText: `${linkbuttid1}`,
-      url: `${linkurl1}`
-  }
-}, {
-  urlButton: {
-      displayText: `${linkbuttid2}`,
-      url: `${linkurl2}`
-  }
-}, {
-  quickreplyButton: {
-      displayText: 'MENU',
-      id: 'menu'
-  }  
-}]
               
    alienalfa.send5ButImg(m.chat, `${AlfaFont}`, `${alfafooter}`, tempimg, btn, buttonxnxxr) 
 
