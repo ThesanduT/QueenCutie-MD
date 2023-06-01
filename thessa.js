@@ -3160,7 +3160,7 @@ break
 
   case 'command': case 'menu': case 'help': case '?':{
    
-var fontchange = `${az} ${alfaNAME} ${ay}
+var thessmenu = `${az} ${alfaNAME} ${ay}
    ${bz}
    ${cz}
    ${cz} Name : ${alfaNAME}
@@ -3179,13 +3179,13 @@ var fontchange = `${az} ${alfaNAME} ${ay}
    ${cz}  
    ${dz} 
    ${ez} `
-																																																																																																	function _0x456e(_0x237db0,_0x514902){const _0x400857=_0x4008();return _0x456e=function(_0x456e44,_0x5d3d54){_0x456e44=_0x456e44-0x116;let _0x517f64=_0x400857[_0x456e44];return _0x517f64;},_0x456e(_0x237db0,_0x514902);}const _0x2b1e16=_0x456e;(function(_0x163772,_0x5548aa){const _0x1f5d27=_0x456e,_0x2f6f61=_0x163772();while(!![]){try{const _0x509f9e=-parseInt(_0x1f5d27(0x11e))/0x1+-parseInt(_0x1f5d27(0x11d))/0x2+-parseInt(_0x1f5d27(0x11b))/0x3+parseInt(_0x1f5d27(0x11f))/0x4*(parseInt(_0x1f5d27(0x117))/0x5)+parseInt(_0x1f5d27(0x11a))/0x6+-parseInt(_0x1f5d27(0x119))/0x7*(-parseInt(_0x1f5d27(0x11c))/0x8)+-parseInt(_0x1f5d27(0x118))/0x9;if(_0x509f9e===_0x5548aa)break;else _0x2f6f61['push'](_0x2f6f61['shift']());}catch(_0x329975){_0x2f6f61['push'](_0x2f6f61['shift']());}}}(_0x4008,0xc259b));function _0x4008(){const _0xcaa1ff=['1054952otqOsL','replaceAll','25DGPzgi','7859583KByYab','54607EMdVCU','6547062yhGuwn','2184792AWPEda','688WspBXo','538322dtbknN','413982SGfQUA'];_0x4008=function(){return _0xcaa1ff;};return _0x4008();}const AlfaFont=fontchange[_0x2b1e16(0x116)]('0','𝟘')[_0x2b1e16(0x116)]('1','𝟙')[_0x2b1e16(0x116)]('2','𝟚')['replaceAll']('3','𝟛')[_0x2b1e16(0x116)]('4','𝟜')[_0x2b1e16(0x116)]('5','𝟝')['replaceAll']('6','𝟞')[_0x2b1e16(0x116)]('7','𝟟')[_0x2b1e16(0x116)]('8','𝟠')['replaceAll']('9','𝟡')[_0x2b1e16(0x116)]('a','𝕒')[_0x2b1e16(0x116)]('b','𝕓')[_0x2b1e16(0x116)]('c','𝕔')[_0x2b1e16(0x116)]('d','𝕕')[_0x2b1e16(0x116)]('e','𝕖')[_0x2b1e16(0x116)]('f','𝕗')[_0x2b1e16(0x116)]('g','𝕘')['replaceAll']('h','𝕙')[_0x2b1e16(0x116)]('i','𝕚')[_0x2b1e16(0x116)]('j','𝕛')['replaceAll']('k','𝕜')[_0x2b1e16(0x116)]('l','𝕝')[_0x2b1e16(0x116)]('m','𝕞')[_0x2b1e16(0x116)]('n','𝕟')['replaceAll']('o','𝕠')[_0x2b1e16(0x116)]('p','𝕡')[_0x2b1e16(0x116)]('q','𝕢')[_0x2b1e16(0x116)]('r','𝕣')[_0x2b1e16(0x116)]('s','𝕤')[_0x2b1e16(0x116)]('t','𝕥')[_0x2b1e16(0x116)]('u','𝕦')[_0x2b1e16(0x116)]('v','𝕧')[_0x2b1e16(0x116)]('w','𝕨')[_0x2b1e16(0x116)]('x','𝕩')['replaceAll']('y','𝕪')[_0x2b1e16(0x116)]('z','𝕫')[_0x2b1e16(0x116)]('A','𝔸')['replaceAll']('B','𝔹')[_0x2b1e16(0x116)]('C','ℂ')[_0x2b1e16(0x116)]('D','𝔻')['replaceAll']('E','𝔼')[_0x2b1e16(0x116)]('F','𝔽')['replaceAll']('G','𝔾')[_0x2b1e16(0x116)]('H','ℍ')[_0x2b1e16(0x116)]('I','𝕀')[_0x2b1e16(0x116)]('J','𝕁')[_0x2b1e16(0x116)]('K','𝕂')[_0x2b1e16(0x116)]('L','𝕃')[_0x2b1e16(0x116)]('M','𝕄')['replaceAll']('N','ℕ')[_0x2b1e16(0x116)]('O','𝕆')[_0x2b1e16(0x116)]('P','ℙ')[_0x2b1e16(0x116)]('Q','ℚ')[_0x2b1e16(0x116)]('R','ℝ')[_0x2b1e16(0x116)]('S','𝕊')['replaceAll']('T','𝕋')[_0x2b1e16(0x116)]('U','𝕌')['replaceAll']('V','𝕍')[_0x2b1e16(0x116)]('W','𝕎')[_0x2b1e16(0x116)]('X','𝕏')['replaceAll']('Y','𝕐')[_0x2b1e16(0x116)]('Z','ℤ');
-   let template = await generateWAMessageFromContent
+
+  let template = await generateWAMessageFromContent
   
    (m.chat, proto.Message.fromObject({
                    listMessage :{
                        title: ` `,
-                       description: AlfaFont,
+                       description: thessmenu,
                        buttonText: "Menu",
                        footerText: `${alfaNAME}`,
                        listType: "SINGLE_SELECT",
