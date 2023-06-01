@@ -53,7 +53,7 @@ let baseURI = '/apps/' + global.herokuapp
 
 //---------------------------------
 
-/*rpg function
+//*rpg function
 const { addInventoriDarah, cekDuluJoinAdaApaKagaDiJson, addDarah, kurangDarah, getDarah }  = require('./storage/user/darah.js')
 
 const { cekInventoryAdaAtauGak, addInventori, addBesi, addEmas, addEmerald, addUmpan, addPotion, kurangBesi, kurangEmas, kurangEmerald, kurangUmpan, kurangPotion, getBesi, getEmas, getEmerald, getUmpan, getPotion } = require('./storage/user/alat_tukar.js')
@@ -88,7 +88,7 @@ const { cekDuluHasilBuruanNya, addInventoriBuruan, addIkan,addAyam, addKelinci, 
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
 */
 
-/*Database omther
+//*Database omther
 let botzysticker = JSON.parse(fs.readFileSync('./Media/theme/Media-Storage/sticker.json'));
 let botzyaudio = JSON.parse(fs.readFileSync('./Media/theme/Media-Storage/audio.json'));
 let botzyimage = JSON.parse(fs.readFileSync('./Media/theme/Media-Storage/image.json'));
@@ -480,7 +480,7 @@ AlienAlfa.sendReadReceipt(from, m.sender, [m.key.id])}
   if (global.available) { if (m.chat) { AlienAlfa.sendPresenceUpdate('available', m.chat) }
   }
 
-/*Autosticker gc
+// Autosticker gc
         if (isAutoSticker) {
             if (/image/.test(mime) && !/webp/.test(mime)) {
                 let mediac = await quoted.download()
@@ -504,7 +504,7 @@ AlienAlfa.sendReadReceipt(from, m.sender, [m.key.id])}
                 await AlienAlfa.sendVideoAsSticker(from, mediac, m, { packname: global.packname, author: global.author })
             }
         }
-*/
+
 	// AntiLinkgc
 if (AntiLink) {
 linkgce = await AlienAlfa.groupInviteCode(from)
@@ -555,7 +555,7 @@ AlienAlfa.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@$
   AlienAlfa.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
   }
   }
-/*anti bad words 
+//*anti bad words 
 if (antiToxic)
 if (bad.includes(messagesD)) {
 tos = ['Hey, watch your mouth','Never been taught how to speak?','Stop being toxic my friend🤢','Dont be toxic ']
